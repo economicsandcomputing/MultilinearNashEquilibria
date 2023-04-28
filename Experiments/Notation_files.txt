@@ -1,0 +1,13 @@
+Notes to the notations of the files:
+
+MIP1 is MIMLP1
+MIP1_feasible_variables is MIMLP1(C)
+
+MIP2 is MIMLP2
+MIP2_feasible is MIMLP2(F)
+MIP2_quadratic is MIMLP2(C)
+MIP2_feasible_variables is MIMLP2(C,F)
+
+Similar for MIP3, MIP4
+
+multi refers to MLP2

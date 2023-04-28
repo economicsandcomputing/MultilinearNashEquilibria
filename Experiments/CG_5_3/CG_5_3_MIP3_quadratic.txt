@@ -1,0 +1,3030 @@
+MIP3 quadratic CG_multi_5_3_1 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value  1.06698079116     
+ Preprocessing found feasible solution with value 0.971357061039     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+          1             1             0.33      0.00000         0.971357    
+*        22            12             3.29      0.00000         0.700458    
+*        22            12             3.33      0.00000         0.661077    
+*        85            11            10.28      0.00000         0.471700    
+*       114             6            13.10      0.00000         0.417105    
+        311            39            43.10      0.00000         0.417105    
+        437            70            73.08      0.00000         0.417105    
+        619            81           102.99      0.00000         0.417105    
+        767            92           133.35      0.00000         0.417105    
+        902           111           163.30      0.00000         0.417105    
+        999           123           193.35      0.00000         0.417105    
+*      1096           127           209.62      0.00000         0.348460    
+       1167           131           239.80      0.00000         0.348460    
+       1325           143           269.79      0.00000         0.348460    
+       1460           160           300.11      0.00000         0.348460    
+       1563           161           330.16      0.00000         0.348460    
+       1654           170           360.24      0.00000         0.348460    
+       1803           169           390.19      0.00000         0.348460    
+       1969           183           420.16      0.00000         0.348460    
+       2092           193           450.17      0.00000         0.348460    
+       2201           199           480.21      0.00000         0.348460    
+       2375           218           510.19      0.00000         0.348460    
+       2485           228           540.29      0.00000         0.348460    
+       2536           237           570.33      0.00000         0.348460    
+       2642           246           600.65      0.00000         0.348460    
+*      2723           186           616.75      0.00000         0.183881    
+       2800           194           646.82      0.00000         0.183881    
+       2898           201           676.85      0.00000         0.183881    
+       2999           204           706.87      0.00000         0.183881    
+       3140           214           736.91      0.00000         0.183881    
+       3189           218           767.08      0.00000         0.183881    
+       3274           229           797.83      0.00000         0.183881    
+       3353           232           828.20      0.00000         0.183881    
+       3427           226           858.21      0.00000         0.183881    
+*      3427             0           858.88      0.00000          0.00000    
+       3427             0           858.88      0.00000          0.00000    
+
+                         *** Normal completion ***            
+
+ Wall clock time:                   861.27
+ Total CPU time used:               858.88
+
+ Total no. of BaR iterations:    3427
+ Best solution found at node:    3427
+ Max. no. of nodes in memory:     249
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 3427 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 249
+optimum found at node 3427
+Baron run time (excluding setup) = 858.87 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var        :=
+1    'x[1,1]'     0.469669
+2    'x[1,2]'     0.0896299
+3    'x[1,3]'     0.440701
+4    'x[2,1]'     0.0513709
+5    'x[2,2]'     0.814601
+6    'x[2,3]'     0.134028
+7    'x[3,1]'     0.206206
+8    'x[3,2]'     0.075519
+9    'x[3,3]'     0.718275
+10   'x[4,1]'     0.22442
+11   'x[4,2]'     0.60716
+12   'x[4,3]'     0.168419
+13   'x[5,1]'     0.426061
+14   'x[5,2]'     0.270202
+15   'x[5,3]'     0.303737
+16   't[1]'     526.352
+17   't[2]'     573.619
+18   't[3]'     525.479
+19   't[4]'     564.947
+20   't[5]'     528.666
+21   'r[1,1]'     0
+22   'r[1,2]'     0
+23   'r[1,3]'     0
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'     0
+27   'r[3,1]'     0
+28   'r[3,2]'     0
+29   'r[3,3]'     0
+30   'r[4,1]'     0
+31   'r[4,2]'     0
+32   'r[4,3]'     0
+33   'r[5,1]'     0
+34   'r[5,2]'     0
+35   'r[5,3]'     0
+36   'u[1,1]'   526.352
+37   'u[1,2]'   526.352
+38   'u[1,3]'   526.352
+39   'u[2,1]'   573.619
+40   'u[2,2]'   573.619
+41   'u[2,3]'   573.619
+42   'u[3,1]'   525.479
+43   'u[3,2]'   525.479
+44   'u[3,3]'   525.479
+45   'u[4,1]'   564.947
+46   'u[4,2]'   564.947
+47   'u[4,3]'   564.947
+48   'u[5,1]'   528.666
+49   'u[5,2]'   528.666
+50   'u[5,3]'   528.666
+51   'b[1,1]'     0
+52   'b[1,2]'     0
+53   'b[1,3]'     0
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     0
+57   'b[3,1]'     0
+58   'b[3,2]'     0
+59   'b[3,3]'     0
+60   'b[4,1]'     0
+61   'b[4,2]'     0
+62   'b[4,3]'     0
+63   'b[5,1]'     0
+64   'b[5,2]'     0
+65   'b[5,3]'     0
+66   'g[1,1]'     1
+67   'g[1,2]'     1
+68   'g[1,3]'     1
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     1
+72   'g[3,1]'     1
+73   'g[3,2]'     1
+74   'g[3,3]'     1
+75   'g[4,1]'     1
+76   'g[4,2]'     1
+77   'g[4,3]'     1
+78   'g[5,1]'     1
+79   'g[5,2]'     1
+80   'g[5,3]'     1
+;
+
+:      _conname     _con.slack  _con.sstatus    :=
+1     'I1[1]'       0             none
+2     'I1[2]'       0             none
+3     'I1[3]'      -2.22045e-16   none
+4     'I1[4]'       0             none
+5     'I1[5]'      -1.11022e-16   none
+6     'I21[1]'     -1.59275e-10   none
+7     'I21[2]'     -2.4022e-10    none
+8     'I21[3]'     -2.95586e-12   none
+9     'I22[1]'     -3.17755e-10   none
+10    'I22[2]'     -2.48406e-10   none
+11    'I22[3]'     -7.27596e-12   none
+12    'I23[1]'     -4.11546e-11   none
+13    'I23[2]'     -1.99975e-10   none
+14    'I23[3]'     -2.05432e-10   none
+15    'I24[1]'     -1.56888e-11   none
+16    'I24[2]'     -7.16227e-11   none
+17    'I24[3]'     -9.77707e-12   none
+18    'I25[1]'     -1.53477e-11   none
+19    'I25[2]'     -2.88196e-10   none
+20    'I25[3]'     -1.18121e-10   none
+21    'I3[1,1]'     0             none
+22    'I3[1,2]'    -1.13687e-13   none
+23    'I3[1,3]'     0             none
+24    'I3[2,1]'     0             none
+25    'I3[2,2]'     0             none
+26    'I3[2,3]'    -2.27374e-13   none
+27    'I3[3,1]'     0             none
+28    'I3[3,2]'     0             none
+29    'I3[3,3]'     0             none
+30    'I3[4,1]'     0             none
+31    'I3[4,2]'     0             none
+32    'I3[4,3]'     0             none
+33    'I3[5,1]'     0             none
+34    'I3[5,2]'     0             none
+35    'I3[5,3]'    -1.13687e-13   none
+36    'I4[1,1]'     0             none
+37    'I4[1,2]'     1.13687e-13   none
+38    'I4[1,3]'     0             none
+39    'I4[2,1]'     0             none
+40    'I4[2,2]'     0             none
+41    'I4[2,3]'    -2.27374e-13   none
+42    'I4[3,1]'     0             none
+43    'I4[3,2]'     0             none
+44    'I4[3,3]'     0             none
+45    'I4[4,1]'     0             none
+46    'I4[4,2]'     0             none
+47    'I4[4,3]'     0             none
+48    'I4[5,1]'     0             none
+49    'I4[5,2]'     0             none
+50    'I4[5,3]'     1.13687e-13   none
+51    'I6[1,1]'     0             none
+52    'I6[1,2]'     0             none
+53    'I6[1,3]'     0             none
+54    'I6[2,1]'     0             none
+55    'I6[2,2]'     0             none
+56    'I6[2,3]'     0             none
+57    'I6[3,1]'     0             none
+58    'I6[3,2]'     0             none
+59    'I6[3,3]'     0             none
+60    'I6[4,1]'     0             none
+61    'I6[4,2]'     0             none
+62    'I6[4,3]'     0             none
+63    'I6[5,1]'     0             none
+64    'I6[5,2]'     0             none
+65    'I6[5,3]'     0             none
+66    'I9[1,1]'     0.530331      none
+67    'I9[1,2]'     0.91037       none
+68    'I9[1,3]'     0.559299      none
+69    'I9[2,1]'     0.948629      none
+70    'I9[2,2]'     0.185399      none
+71    'I9[2,3]'     0.865972      none
+72    'I9[3,1]'     0.793794      none
+73    'I9[3,2]'     0.924481      none
+74    'I9[3,3]'     0.281725      none
+75    'I9[4,1]'     0.77558       none
+76    'I9[4,2]'     0.39284       none
+77    'I9[4,3]'     0.831581      none
+78    'I9[5,1]'     0.573939      none
+79    'I9[5,2]'     0.729798      none
+80    'I9[5,3]'     0.696263      none
+81    'I10[1,1]'    0             none
+82    'I10[1,2]'    0             none
+83    'I10[1,3]'    0             none
+84    'I10[2,1]'    0             none
+85    'I10[2,2]'    0             none
+86    'I10[2,3]'    0             none
+87    'I10[3,1]'   -2.22045e-16   none
+88    'I10[3,2]'    0             none
+89    'I10[3,3]'    0             none
+90    'I10[4,1]'    0             none
+91    'I10[4,2]'    0             none
+92    'I10[4,3]'    0             none
+93    'I10[5,1]'    0             none
+94    'I10[5,2]'    0             none
+95    'I10[5,3]'    0             none
+96    'I11[1,1]'    0             none
+97    'I11[1,2]'    0             none
+98    'I11[1,3]'    0             none
+99    'I11[2,1]'    0             none
+100   'I11[2,2]'    0             none
+101   'I11[2,3]'    0             none
+102   'I11[3,1]'    0             none
+103   'I11[3,2]'    0             none
+104   'I11[3,3]'    0             none
+105   'I11[4,1]'    0             none
+106   'I11[4,2]'    0             none
+107   'I11[4,3]'    0             none
+108   'I11[5,1]'    0             none
+109   'I11[5,2]'    0             none
+110   'I11[5,3]'    0             none
+;
+
+MIP3 quadratic CG_multi_5_3_2 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value 0.514355577603     
+ Preprocessing found feasible solution with value 0.498443788568     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+*         1             0             0.32      0.00000          0.00000    
+          1             0             0.32      0.00000          0.00000    
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.33
+ Total CPU time used:                 0.32
+
+ Total no. of BaR iterations:       1
+ Best solution found at node:       1
+ Max. no. of nodes in memory:       1
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 1 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 1
+optimum found at node 1
+Baron run time (excluding setup) = 0.32 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var       :=
+1    'x[1,1]'     0.191079
+2    'x[1,2]'     0.208242
+3    'x[1,3]'     0.600679
+4    'x[2,1]'     0.430273
+5    'x[2,2]'     0.252375
+6    'x[2,3]'     0.317352
+7    'x[3,1]'     0.233885
+8    'x[3,2]'     0.353775
+9    'x[3,3]'     0.41234
+10   'x[4,1]'     0.643252
+11   'x[4,2]'     0.163852
+12   'x[4,3]'     0.192897
+13   'x[5,1]'     0.11994
+14   'x[5,2]'     0.435445
+15   'x[5,3]'     0.444615
+16   't[1]'     429.997
+17   't[2]'     464.116
+18   't[3]'     433.248
+19   't[4]'     419.206
+20   't[5]'     424.393
+21   'r[1,1]'     0
+22   'r[1,2]'     0
+23   'r[1,3]'     0
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'     0
+27   'r[3,1]'     0
+28   'r[3,2]'     0
+29   'r[3,3]'     0
+30   'r[4,1]'     0
+31   'r[4,2]'     0
+32   'r[4,3]'     0
+33   'r[5,1]'     0
+34   'r[5,2]'     0
+35   'r[5,3]'     0
+36   'u[1,1]'   429.997
+37   'u[1,2]'   429.997
+38   'u[1,3]'   429.997
+39   'u[2,1]'   464.116
+40   'u[2,2]'   464.116
+41   'u[2,3]'   464.116
+42   'u[3,1]'   433.248
+43   'u[3,2]'   433.248
+44   'u[3,3]'   433.248
+45   'u[4,1]'   419.206
+46   'u[4,2]'   419.206
+47   'u[4,3]'   419.206
+48   'u[5,1]'   424.393
+49   'u[5,2]'   424.393
+50   'u[5,3]'   424.393
+51   'b[1,1]'     0
+52   'b[1,2]'     0
+53   'b[1,3]'     0
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     0
+57   'b[3,1]'     0
+58   'b[3,2]'     0
+59   'b[3,3]'     0
+60   'b[4,1]'     0
+61   'b[4,2]'     0
+62   'b[4,3]'     0
+63   'b[5,1]'     0
+64   'b[5,2]'     0
+65   'b[5,3]'     0
+66   'g[1,1]'     1
+67   'g[1,2]'     1
+68   'g[1,3]'     1
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     1
+72   'g[3,1]'     1
+73   'g[3,2]'     1
+74   'g[3,3]'     1
+75   'g[4,1]'     1
+76   'g[4,2]'     1
+77   'g[4,3]'     1
+78   'g[5,1]'     1
+79   'g[5,2]'     1
+80   'g[5,3]'     1
+;
+
+:      _conname     _con.slack  _con.sstatus    :=
+1     'I1[1]'       0             none
+2     'I1[2]'      -2.22045e-16   none
+3     'I1[3]'       0             none
+4     'I1[4]'      -1.11022e-16   none
+5     'I1[5]'       0             none
+6     'I21[1]'     -2.16005e-12   none
+7     'I21[2]'     -8.52651e-13   none
+8     'I21[3]'     -3.29692e-12   none
+9     'I22[1]'     -4.20641e-12   none
+10    'I22[2]'     -2.27374e-13   none
+11    'I22[3]'     -2.72848e-12   none
+12    'I23[1]'     -2.50111e-12   none
+13    'I23[2]'     -3.9222e-12    none
+14    'I23[3]'     -7.95808e-13   none
+15    'I24[1]'     -5.11591e-13   none
+16    'I24[2]'     -2.21689e-12   none
+17    'I24[3]'     -6.25278e-13   none
+18    'I25[1]'     -1.02318e-12   none
+19    'I25[2]'     -2.84217e-12   none
+20    'I25[3]'     -6.25278e-13   none
+21    'I3[1,1]'     0             none
+22    'I3[1,2]'     0             none
+23    'I3[1,3]'     0             none
+24    'I3[2,1]'     0             none
+25    'I3[2,2]'     0             none
+26    'I3[2,3]'     0             none
+27    'I3[3,1]'     0             none
+28    'I3[3,2]'     0             none
+29    'I3[3,3]'     0             none
+30    'I3[4,1]'     0             none
+31    'I3[4,2]'     0             none
+32    'I3[4,3]'     0             none
+33    'I3[5,1]'     0             none
+34    'I3[5,2]'     0             none
+35    'I3[5,3]'     0             none
+36    'I4[1,1]'     0             none
+37    'I4[1,2]'     0             none
+38    'I4[1,3]'     0             none
+39    'I4[2,1]'     0             none
+40    'I4[2,2]'     0             none
+41    'I4[2,3]'     0             none
+42    'I4[3,1]'     0             none
+43    'I4[3,2]'     0             none
+44    'I4[3,3]'     0             none
+45    'I4[4,1]'     0             none
+46    'I4[4,2]'     0             none
+47    'I4[4,3]'     0             none
+48    'I4[5,1]'     0             none
+49    'I4[5,2]'     0             none
+50    'I4[5,3]'     0             none
+51    'I6[1,1]'     0             none
+52    'I6[1,2]'     0             none
+53    'I6[1,3]'     0             none
+54    'I6[2,1]'     0             none
+55    'I6[2,2]'     0             none
+56    'I6[2,3]'     0             none
+57    'I6[3,1]'     0             none
+58    'I6[3,2]'     0             none
+59    'I6[3,3]'     0             none
+60    'I6[4,1]'     0             none
+61    'I6[4,2]'     0             none
+62    'I6[4,3]'     0             none
+63    'I6[5,1]'     0             none
+64    'I6[5,2]'     0             none
+65    'I6[5,3]'     0             none
+66    'I9[1,1]'     0.808921      none
+67    'I9[1,2]'     0.791758      none
+68    'I9[1,3]'     0.399321      none
+69    'I9[2,1]'     0.569727      none
+70    'I9[2,2]'     0.747625      none
+71    'I9[2,3]'     0.682648      none
+72    'I9[3,1]'     0.766115      none
+73    'I9[3,2]'     0.646225      none
+74    'I9[3,3]'     0.58766       none
+75    'I9[4,1]'     0.356748      none
+76    'I9[4,2]'     0.836148      none
+77    'I9[4,3]'     0.807103      none
+78    'I9[5,1]'     0.88006       none
+79    'I9[5,2]'     0.564555      none
+80    'I9[5,3]'     0.555385      none
+81    'I10[1,1]'    0             none
+82    'I10[1,2]'    0             none
+83    'I10[1,3]'    0             none
+84    'I10[2,1]'    0             none
+85    'I10[2,2]'    0             none
+86    'I10[2,3]'    0             none
+87    'I10[3,1]'    0             none
+88    'I10[3,2]'    0             none
+89    'I10[3,3]'    0             none
+90    'I10[4,1]'   -1.11022e-16   none
+91    'I10[4,2]'   -1.11022e-16   none
+92    'I10[4,3]'   -1.11022e-16   none
+93    'I10[5,1]'    0             none
+94    'I10[5,2]'    0             none
+95    'I10[5,3]'    0             none
+96    'I11[1,1]'    0             none
+97    'I11[1,2]'    0             none
+98    'I11[1,3]'    0             none
+99    'I11[2,1]'    0             none
+100   'I11[2,2]'    0             none
+101   'I11[2,3]'    0             none
+102   'I11[3,1]'    0             none
+103   'I11[3,2]'    0             none
+104   'I11[3,3]'    0             none
+105   'I11[4,1]'    0             none
+106   'I11[4,2]'    0             none
+107   'I11[4,3]'    0             none
+108   'I11[5,1]'    0             none
+109   'I11[5,2]'    0             none
+110   'I11[5,3]'    0             none
+;
+
+MIP3 quadratic CG_multi_5_3_3 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value  1.01334249882     
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value 0.396650534763     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+          1             1             0.39      0.00000         0.396651    
+        185            14            30.41      0.00000         0.396651    
+        355            24            60.38      0.00000         0.396651    
+        501            35            90.36      0.00000         0.396651    
+        657            47           120.34      0.00000         0.396651    
+        768            47           150.50      0.00000         0.396651    
+        861            64           180.44      0.00000         0.396651    
+        941            60           210.60      0.00000         0.396651    
+        985            62           240.86      0.00000         0.396651    
+       1086            72           271.06      0.00000         0.396651    
+       1177            89           301.28      0.00000         0.396651    
+       1285           105           331.47      0.00000         0.396651    
+       1394           102           361.76      0.00000         0.396651    
+       1490           113           391.34      0.00000         0.396651    
+       1595           114           420.67      0.00000         0.396651    
+       1693           127           450.25      0.00000         0.396651    
+       1819           138           480.35      0.00000         0.396651    
+       1885           142           510.45      0.00000         0.396651    
+       1974           152           540.44      0.00000         0.396651    
+       2076           177           569.52      0.00000         0.396651    
+       2116           174           598.82      0.00000         0.396651    
+       2174           179           629.76      0.00000         0.396651    
+       2214           178           659.80      0.00000         0.396651    
+       2276           191           689.74      0.00000         0.396651    
+       2353           198           719.73      0.00000         0.396651    
+       2422           201           749.80      0.00000         0.396651    
+       2504           212           779.82      0.00000         0.396651    
+       2588           211           810.62      0.00000         0.396651    
+       2667           221           840.64      0.00000         0.396651    
+       2700           224           870.80      0.00000         0.396651    
+       2733           226           900.00      0.00000         0.396651    
+
+                    *** Max. allowable time exceeded ***      
+
+ Wall clock time:                   906.09
+ Total CPU time used:               900.00
+
+ Total no. of BaR iterations:    2733
+ Best solution found at node:      -1
+ Max. no. of nodes in memory:     226
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 2733 iterations, CPU time limit reached.
+Objective 0.3966505348
+Objective lower bound = 0, upper bound = 0.396650534763
+barstatus = 4, modelstatus = 4
+max nodes in memory = 226
+optimum found at node -1
+Baron run time (excluding setup) = 900 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = limit
+
+:    _varname      _var       :=
+1    'x[1,1]'     0.069819
+2    'x[1,2]'     0.379683
+3    'x[1,3]'     0.550498
+4    'x[2,1]'     0.521835
+5    'x[2,2]'     0.478165
+6    'x[2,3]'     0
+7    'x[3,1]'     0
+8    'x[3,2]'     0.128658
+9    'x[3,3]'     0.871342
+10   'x[4,1]'     0.374241
+11   'x[4,2]'     0.326832
+12   'x[4,3]'     0.298927
+13   'x[5,1]'     0.719299
+14   'x[5,2]'     0.280701
+15   'x[5,3]'     0
+16   't[1]'     492.931
+17   't[2]'     543.33
+18   't[3]'     504.061
+19   't[4]'     493.072
+20   't[5]'     505.346
+21   'r[1,1]'     0
+22   'r[1,2]'     0
+23   'r[1,3]'     0
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'    97.3685
+27   'r[3,1]'     7.94526
+28   'r[3,2]'     0
+29   'r[3,3]'     0
+30   'r[4,1]'     0
+31   'r[4,2]'   100.334
+32   'r[4,3]'     0
+33   'r[5,1]'     0
+34   'r[5,2]'     0
+35   'r[5,3]'    53.5531
+36   'u[1,1]'   492.931
+37   'u[1,2]'   492.931
+38   'u[1,3]'   492.931
+39   'u[2,1]'   543.33
+40   'u[2,2]'   543.33
+41   'u[2,3]'   445.962
+42   'u[3,1]'   496.116
+43   'u[3,2]'   504.061
+44   'u[3,3]'   504.061
+45   'u[4,1]'   493.072
+46   'u[4,2]'   392.739
+47   'u[4,3]'   493.072
+48   'u[5,1]'   505.346
+49   'u[5,2]'   505.346
+50   'u[5,3]'   451.793
+51   'b[1,1]'     1
+52   'b[1,2]'     0
+53   'b[1,3]'     0
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     1
+57   'b[3,1]'     1
+58   'b[3,2]'     0
+59   'b[3,3]'     0
+60   'b[4,1]'     0
+61   'b[4,2]'     1
+62   'b[4,3]'     0
+63   'b[5,1]'     0
+64   'b[5,2]'     0
+65   'b[5,3]'     1
+66   'g[1,1]'     0.069819
+67   'g[1,2]'     1
+68   'g[1,3]'     1
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     0
+72   'g[3,1]'     0
+73   'g[3,2]'     1
+74   'g[3,3]'     1
+75   'g[4,1]'     1
+76   'g[4,2]'     0.326832
+77   'g[4,3]'     1
+78   'g[5,1]'     1
+79   'g[5,2]'     1
+80   'g[5,3]'     0
+;
+
+:      _conname     _con.slack   _con.sstatus    :=
+1     'I1[1]'       -2.22045e-16   none
+2     'I1[2]'        0             none
+3     'I1[3]'       -2.22045e-16   none
+4     'I1[4]'        0             none
+5     'I1[5]'        0             none
+6     'I21[1]'      -1.7053e-13    none
+7     'I21[2]'       0             none
+8     'I21[3]'      -2.27374e-13   none
+9     'I22[1]'       0             none
+10    'I22[2]'      -2.27374e-13   none
+11    'I22[3]'       0             none
+12    'I23[1]'      -5.68434e-14   none
+13    'I23[2]'       0             none
+14    'I23[3]'      -5.68434e-14   none
+15    'I24[1]'       0             none
+16    'I24[2]'      -2.27374e-13   none
+17    'I24[3]'       0             none
+18    'I25[1]'      -1.13687e-13   none
+19    'I25[2]'      -1.7053e-13    none
+20    'I25[3]'      -5.68434e-14   none
+21    'I3[1,1]'     -2.72848e-12   none
+22    'I3[1,2]'      0             none
+23    'I3[1,3]'     -1.81899e-12   none
+24    'I3[2,1]'     -2.50111e-12   none
+25    'I3[2,2]'     -1.81899e-12   none
+26    'I3[2,3]'     -4.54747e-13   none
+27    'I3[3,1]'     -1.64846e-12   none
+28    'I3[3,2]'     -1.81899e-12   none
+29    'I3[3,3]'     -1.81899e-12   none
+30    'I3[4,1]'      0             none
+31    'I3[4,2]'     -1.02318e-12   none
+32    'I3[4,3]'     -1.81899e-12   none
+33    'I3[5,1]'      0             none
+34    'I3[5,2]'      0             none
+35    'I3[5,3]'      0             none
+36    'I4[1,1]'      2.72848e-12   none
+37    'I4[1,2]'      0             none
+38    'I4[1,3]'      1.81899e-12   none
+39    'I4[2,1]'      2.50111e-12   none
+40    'I4[2,2]'      1.81899e-12   none
+41    'I4[2,3]'     97.3685        none
+42    'I4[3,1]'      7.94526       none
+43    'I4[3,2]'      1.81899e-12   none
+44    'I4[3,3]'      1.81899e-12   none
+45    'I4[4,1]'      0             none
+46    'I4[4,2]'    100.334         none
+47    'I4[4,3]'      1.81899e-12   none
+48    'I4[5,1]'      0             none
+49    'I4[5,2]'      0             none
+50    'I4[5,3]'     53.5531        none
+51    'I6[1,1]'    864             none
+52    'I6[1,2]'      0             none
+53    'I6[1,3]'      0             none
+54    'I6[2,1]'      0             none
+55    'I6[2,2]'      0             none
+56    'I6[2,3]'    901.632         none
+57    'I6[3,1]'    851.055         none
+58    'I6[3,2]'      0             none
+59    'I6[3,3]'      0             none
+60    'I6[4,1]'      0             none
+61    'I6[4,2]'    821.666         none
+62    'I6[4,3]'      0             none
+63    'I6[5,1]'      0             none
+64    'I6[5,2]'      0             none
+65    'I6[5,3]'    912.447         none
+66    'I9[1,1]'      0             none
+67    'I9[1,2]'      0.620317      none
+68    'I9[1,3]'      0.449502      none
+69    'I9[2,1]'      0.478165      none
+70    'I9[2,2]'      0.521835      none
+71    'I9[2,3]'      0             none
+72    'I9[3,1]'      0             none
+73    'I9[3,2]'      0.871342      none
+74    'I9[3,3]'      0.128658      none
+75    'I9[4,1]'      0.625759      none
+76    'I9[4,2]'      0             none
+77    'I9[4,3]'      0.701073      none
+78    'I9[5,1]'      0.280701      none
+79    'I9[5,2]'      0.719299      none
+80    'I9[5,3]'      0             none
+81    'I10[1,1]'     0.069819      none
+82    'I10[1,2]'     0             none
+83    'I10[1,3]'     0             none
+84    'I10[2,1]'     0             none
+85    'I10[2,2]'     0             none
+86    'I10[2,3]'     0             none
+87    'I10[3,1]'     0             none
+88    'I10[3,2]'     0             none
+89    'I10[3,3]'     0             none
+90    'I10[4,1]'     0             none
+91    'I10[4,2]'     0.326832      none
+92    'I10[4,3]'     0             none
+93    'I10[5,1]'     0             none
+94    'I10[5,2]'     0             none
+95    'I10[5,3]'     0             none
+96    'I11[1,1]'     0             none
+97    'I11[1,2]'     0             none
+98    'I11[1,3]'     0             none
+99    'I11[2,1]'     0             none
+100   'I11[2,2]'     0             none
+101   'I11[2,3]'     0             none
+102   'I11[3,1]'     0             none
+103   'I11[3,2]'     0             none
+104   'I11[3,3]'     0             none
+105   'I11[4,1]'     0             none
+106   'I11[4,2]'     0             none
+107   'I11[4,3]'     0             none
+108   'I11[5,1]'     0             none
+109   'I11[5,2]'     0             none
+110   'I11[5,3]'     0             none
+;
+
+MIP3 quadratic CG_multi_5_3_4 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value  1.40210576152     
+ Preprocessing found feasible solution with value  1.00000000000     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+*         1             0             0.29      0.00000          0.00000    
+          1             0             0.29      0.00000          0.00000    
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.29
+ Total CPU time used:                 0.29
+
+ Total no. of BaR iterations:       1
+ Best solution found at node:       1
+ Max. no. of nodes in memory:       1
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 1 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 1
+optimum found at node 1
+Baron run time (excluding setup) = 0.28 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var        :=
+1    'x[1,1]'     0.16522
+2    'x[1,2]'     0.547034
+3    'x[1,3]'     0.287747
+4    'x[2,1]'     0.243881
+5    'x[2,2]'     0.363141
+6    'x[2,3]'     0.392978
+7    'x[3,1]'     0.133225
+8    'x[3,2]'     0.805505
+9    'x[3,3]'     0.0612703
+10   'x[4,1]'     0.343871
+11   'x[4,2]'     0.330841
+12   'x[4,3]'     0.325288
+13   'x[5,1]'     0.125974
+14   'x[5,2]'     0.379712
+15   'x[5,3]'     0.494314
+16   't[1]'     489.995
+17   't[2]'     525.442
+18   't[3]'     500.958
+19   't[4]'     509.579
+20   't[5]'     457.195
+21   'r[1,1]'     0
+22   'r[1,2]'     0
+23   'r[1,3]'     0
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'     0
+27   'r[3,1]'     0
+28   'r[3,2]'     0
+29   'r[3,3]'     0
+30   'r[4,1]'     0
+31   'r[4,2]'     0
+32   'r[4,3]'     0
+33   'r[5,1]'     0
+34   'r[5,2]'     0
+35   'r[5,3]'     0
+36   'u[1,1]'   489.995
+37   'u[1,2]'   489.995
+38   'u[1,3]'   489.995
+39   'u[2,1]'   525.442
+40   'u[2,2]'   525.442
+41   'u[2,3]'   525.442
+42   'u[3,1]'   500.958
+43   'u[3,2]'   500.958
+44   'u[3,3]'   500.958
+45   'u[4,1]'   509.579
+46   'u[4,2]'   509.579
+47   'u[4,3]'   509.579
+48   'u[5,1]'   457.195
+49   'u[5,2]'   457.195
+50   'u[5,3]'   457.195
+51   'b[1,1]'     0
+52   'b[1,2]'     0
+53   'b[1,3]'     0
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     0
+57   'b[3,1]'     0
+58   'b[3,2]'     0
+59   'b[3,3]'     0
+60   'b[4,1]'     0
+61   'b[4,2]'     0
+62   'b[4,3]'     0
+63   'b[5,1]'     0
+64   'b[5,2]'     0
+65   'b[5,3]'     0
+66   'g[1,1]'     1
+67   'g[1,2]'     1
+68   'g[1,3]'     1
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     1
+72   'g[3,1]'     1
+73   'g[3,2]'     1
+74   'g[3,3]'     1
+75   'g[4,1]'     1
+76   'g[4,2]'     1
+77   'g[4,3]'     1
+78   'g[5,1]'     1
+79   'g[5,2]'     1
+80   'g[5,3]'     1
+;
+
+:      _conname     _con.slack  _con.sstatus    :=
+1     'I1[1]'      -1.11022e-16   none
+2     'I1[2]'       0             none
+3     'I1[3]'       0             none
+4     'I1[4]'       0             none
+5     'I1[5]'       0             none
+6     'I21[1]'     -5.68434e-14   none
+7     'I21[2]'     -1.13687e-13   none
+8     'I21[3]'     -1.7053e-13    none
+9     'I22[1]'     -2.27374e-13   none
+10    'I22[2]'      0             none
+11    'I22[3]'      0             none
+12    'I23[1]'     -1.13687e-13   none
+13    'I23[2]'     -5.68434e-14   none
+14    'I23[3]'     -5.68434e-14   none
+15    'I24[1]'     -2.27374e-13   none
+16    'I24[2]'     -1.7053e-13    none
+17    'I24[3]'     -5.68434e-14   none
+18    'I25[1]'     -1.13687e-13   none
+19    'I25[2]'     -5.68434e-14   none
+20    'I25[3]'     -5.68434e-14   none
+21    'I3[1,1]'     0             none
+22    'I3[1,2]'     0             none
+23    'I3[1,3]'     0             none
+24    'I3[2,1]'     0             none
+25    'I3[2,2]'     0             none
+26    'I3[2,3]'     0             none
+27    'I3[3,1]'     0             none
+28    'I3[3,2]'     0             none
+29    'I3[3,3]'     0             none
+30    'I3[4,1]'     0             none
+31    'I3[4,2]'     0             none
+32    'I3[4,3]'     0             none
+33    'I3[5,1]'     0             none
+34    'I3[5,2]'     0             none
+35    'I3[5,3]'     0             none
+36    'I4[1,1]'     0             none
+37    'I4[1,2]'     0             none
+38    'I4[1,3]'     0             none
+39    'I4[2,1]'     0             none
+40    'I4[2,2]'     0             none
+41    'I4[2,3]'     0             none
+42    'I4[3,1]'     0             none
+43    'I4[3,2]'     0             none
+44    'I4[3,3]'     0             none
+45    'I4[4,1]'     0             none
+46    'I4[4,2]'     0             none
+47    'I4[4,3]'     0             none
+48    'I4[5,1]'     0             none
+49    'I4[5,2]'     0             none
+50    'I4[5,3]'     0             none
+51    'I6[1,1]'     0             none
+52    'I6[1,2]'     0             none
+53    'I6[1,3]'     0             none
+54    'I6[2,1]'     0             none
+55    'I6[2,2]'     0             none
+56    'I6[2,3]'     0             none
+57    'I6[3,1]'     0             none
+58    'I6[3,2]'     0             none
+59    'I6[3,3]'     0             none
+60    'I6[4,1]'     0             none
+61    'I6[4,2]'     0             none
+62    'I6[4,3]'     0             none
+63    'I6[5,1]'     0             none
+64    'I6[5,2]'     0             none
+65    'I6[5,3]'     0             none
+66    'I9[1,1]'     0.83478       none
+67    'I9[1,2]'     0.452966      none
+68    'I9[1,3]'     0.712253      none
+69    'I9[2,1]'     0.756119      none
+70    'I9[2,2]'     0.636859      none
+71    'I9[2,3]'     0.607022      none
+72    'I9[3,1]'     0.866775      none
+73    'I9[3,2]'     0.194495      none
+74    'I9[3,3]'     0.93873       none
+75    'I9[4,1]'     0.656129      none
+76    'I9[4,2]'     0.669159      none
+77    'I9[4,3]'     0.674712      none
+78    'I9[5,1]'     0.874026      none
+79    'I9[5,2]'     0.620288      none
+80    'I9[5,3]'     0.505686      none
+81    'I10[1,1]'    0             none
+82    'I10[1,2]'    0             none
+83    'I10[1,3]'    0             none
+84    'I10[2,1]'    0             none
+85    'I10[2,2]'    0             none
+86    'I10[2,3]'    0             none
+87    'I10[3,1]'    0             none
+88    'I10[3,2]'    0             none
+89    'I10[3,3]'    0             none
+90    'I10[4,1]'    0             none
+91    'I10[4,2]'    0             none
+92    'I10[4,3]'    0             none
+93    'I10[5,1]'    0             none
+94    'I10[5,2]'    0             none
+95    'I10[5,3]'    0             none
+96    'I11[1,1]'    0             none
+97    'I11[1,2]'    0             none
+98    'I11[1,3]'    0             none
+99    'I11[2,1]'    0             none
+100   'I11[2,2]'    0             none
+101   'I11[2,3]'    0             none
+102   'I11[3,1]'    0             none
+103   'I11[3,2]'    0             none
+104   'I11[3,3]'    0             none
+105   'I11[4,1]'    0             none
+106   'I11[4,2]'    0             none
+107   'I11[4,3]'    0             none
+108   'I11[5,1]'    0             none
+109   'I11[5,2]'    0             none
+110   'I11[5,3]'    0             none
+;
+
+MIP3 quadratic CG_multi_5_3_5 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value  1.44781229231     
+ Preprocessing found feasible solution with value  1.35516220126     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+*         1             1             0.28      0.00000         0.853789    
+          1             1             0.32      0.00000         0.853789    
+*         2             2             0.56      0.00000         0.616947E-01
+*        79            15            20.09      0.00000         0.116210E-01
+        347            31            50.05      0.00000         0.116210E-01
+        578            37            79.93      0.00000         0.116210E-01
+        789            46           109.93      0.00000         0.116210E-01
+        996            48           139.85      0.00000         0.116210E-01
+       1221            63           169.80      0.00000         0.116210E-01
+       1454            74           199.79      0.00000         0.116210E-01
+       1686            79           229.82      0.00000         0.116210E-01
+       1890            85           259.29      0.00000         0.116210E-01
+       2064            88           288.80      0.00000         0.116210E-01
+       2254            90           318.93      0.00000         0.116210E-01
+       2428            95           348.70      0.00000         0.116210E-01
+       2565            95           378.59      0.00000         0.116210E-01
+       2712            97           408.48      0.00000         0.116210E-01
+       2842            97           438.35      0.00000         0.116210E-01
+       2958            99           468.18      0.00000         0.116210E-01
+       3086            94           497.71      0.00000         0.116210E-01
+       3211            92           527.03      0.00000         0.116210E-01
+       3360            93           556.98      0.00000         0.116210E-01
+       3464            92           585.74      0.00000         0.116210E-01
+       3633            90           615.68      0.00000         0.116210E-01
+       3824            90           645.66      0.00000         0.116210E-01
+       3993            95           675.27      0.00000         0.116210E-01
+       4127            96           704.70      0.00000         0.116210E-01
+       4266            96           734.31      0.00000         0.116210E-01
+       4400            95           763.40      0.00000         0.116210E-01
+       4550            92           793.12      0.00000         0.116210E-01
+       4666            89           822.81      0.00000         0.116210E-01
+       4848            93           852.68      0.00000         0.116210E-01
+       5013            92           882.61      0.00000         0.116210E-01
+       5097            93           900.05      0.00000         0.116210E-01
+
+                    *** Max. allowable time exceeded ***      
+
+ Wall clock time:                   912.52
+ Total CPU time used:               900.05
+
+ Total no. of BaR iterations:    5097
+ Best solution found at node:      79
+ Max. no. of nodes in memory:     100
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 5097 iterations, CPU time limit reached.
+Objective 0.01162102465
+Objective lower bound = 0, upper bound = 0.0116210246511
+barstatus = 4, modelstatus = 4
+max nodes in memory = 100
+optimum found at node 79
+Baron run time (excluding setup) = 900.04 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = limit
+
+:    _varname      _var       :=
+1    'x[1,1]'     0.72577
+2    'x[1,2]'     0.262608
+3    'x[1,3]'     0.011621
+4    'x[2,1]'     0.118099
+5    'x[2,2]'     0.568838
+6    'x[2,3]'     0.313063
+7    'x[3,1]'     0.523352
+8    'x[3,2]'     0.15337
+9    'x[3,3]'     0.323278
+10   'x[4,1]'     0
+11   'x[4,2]'     0.389476
+12   'x[4,3]'     0.610524
+13   'x[5,1]'     0.283294
+14   'x[5,2]'     0
+15   'x[5,3]'     0.716706
+16   't[1]'     475.38
+17   't[2]'     458.027
+18   't[3]'     424.168
+19   't[4]'     499.233
+20   't[5]'     537.821
+21   'r[1,1]'     0
+22   'r[1,2]'     0
+23   'r[1,3]'    32.5517
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'     0
+27   'r[3,1]'     0
+28   'r[3,2]'     0
+29   'r[3,3]'     0
+30   'r[4,1]'     0
+31   'r[4,2]'     0
+32   'r[4,3]'     0
+33   'r[5,1]'     0
+34   'r[5,2]'   123.256
+35   'r[5,3]'     0
+36   'u[1,1]'   475.38
+37   'u[1,2]'   475.38
+38   'u[1,3]'   442.829
+39   'u[2,1]'   458.027
+40   'u[2,2]'   458.027
+41   'u[2,3]'   458.027
+42   'u[3,1]'   424.168
+43   'u[3,2]'   424.168
+44   'u[3,3]'   424.168
+45   'u[4,1]'   499.233
+46   'u[4,2]'   499.233
+47   'u[4,3]'   499.233
+48   'u[5,1]'   537.821
+49   'u[5,2]'   414.565
+50   'u[5,3]'   537.821
+51   'b[1,1]'     0
+52   'b[1,2]'     0
+53   'b[1,3]'     1
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     0
+57   'b[3,1]'     0
+58   'b[3,2]'     0
+59   'b[3,3]'     0
+60   'b[4,1]'     0
+61   'b[4,2]'     0
+62   'b[4,3]'     0
+63   'b[5,1]'     0
+64   'b[5,2]'     1
+65   'b[5,3]'     0
+66   'g[1,1]'     1
+67   'g[1,2]'     1
+68   'g[1,3]'     0.011621
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     1
+72   'g[3,1]'     1
+73   'g[3,2]'     1
+74   'g[3,3]'     1
+75   'g[4,1]'     1
+76   'g[4,2]'     1
+77   'g[4,3]'     1
+78   'g[5,1]'     1
+79   'g[5,2]'     0
+80   'g[5,3]'     1
+;
+
+:      _conname     _con.slack   _con.sstatus    :=
+1     'I1[1]'       -2.22045e-16   none
+2     'I1[2]'        0             none
+3     'I1[3]'       -2.22045e-16   none
+4     'I1[4]'        0             none
+5     'I1[5]'       -2.22045e-16   none
+6     'I21[1]'      -2.41357e-10   none
+7     'I21[2]'      -1.93097e-10   none
+8     'I21[3]'      -5.03462e-10   none
+9     'I22[1]'      -5.75824e-11   none
+10    'I22[2]'      -4.05919e-10   none
+11    'I22[3]'      -1.21815e-10   none
+12    'I23[1]'      -1.19087e-10   none
+13    'I23[2]'      -2.54829e-10   none
+14    'I23[3]'      -1.21588e-10   none
+15    'I24[1]'      -1.97758e-10   none
+16    'I24[2]'      -2.84103e-10   none
+17    'I24[3]'      -6.04246e-11   none
+18    'I25[1]'      -1.12891e-10   none
+19    'I25[2]'      -3.72893e-10   none
+20    'I25[3]'      -3.472e-10     none
+21    'I3[1,1]'      0             none
+22    'I3[1,2]'      0             none
+23    'I3[1,3]'      0             none
+24    'I3[2,1]'      0             none
+25    'I3[2,2]'      0             none
+26    'I3[2,3]'      0             none
+27    'I3[3,1]'      0             none
+28    'I3[3,2]'      0             none
+29    'I3[3,3]'      0             none
+30    'I3[4,1]'      0             none
+31    'I3[4,2]'      0             none
+32    'I3[4,3]'      0             none
+33    'I3[5,1]'      0             none
+34    'I3[5,2]'     -1.13687e-13   none
+35    'I3[5,3]'      0             none
+36    'I4[1,1]'      0             none
+37    'I4[1,2]'      0             none
+38    'I4[1,3]'     32.5517        none
+39    'I4[2,1]'      0             none
+40    'I4[2,2]'      0             none
+41    'I4[2,3]'      0             none
+42    'I4[3,1]'      0             none
+43    'I4[3,2]'      0             none
+44    'I4[3,3]'      0             none
+45    'I4[4,1]'      0             none
+46    'I4[4,2]'      0             none
+47    'I4[4,3]'      0             none
+48    'I4[5,1]'      0             none
+49    'I4[5,2]'    123.256         none
+50    'I4[5,3]'      0             none
+51    'I6[1,1]'      0             none
+52    'I6[1,2]'      0             none
+53    'I6[1,3]'    781.448         none
+54    'I6[2,1]'      0             none
+55    'I6[2,2]'      0             none
+56    'I6[2,3]'      0             none
+57    'I6[3,1]'      0             none
+58    'I6[3,2]'      0             none
+59    'I6[3,3]'      0             none
+60    'I6[4,1]'      0             none
+61    'I6[4,2]'      0             none
+62    'I6[4,3]'      0             none
+63    'I6[5,1]'      0             none
+64    'I6[5,2]'    685.744         none
+65    'I6[5,3]'      0             none
+66    'I9[1,1]'      0.27423       none
+67    'I9[1,2]'      0.737392      none
+68    'I9[1,3]'      0             none
+69    'I9[2,1]'      0.881901      none
+70    'I9[2,2]'      0.431162      none
+71    'I9[2,3]'      0.686937      none
+72    'I9[3,1]'      0.476648      none
+73    'I9[3,2]'      0.84663       none
+74    'I9[3,3]'      0.676722      none
+75    'I9[4,1]'      1             none
+76    'I9[4,2]'      0.610524      none
+77    'I9[4,3]'      0.389476      none
+78    'I9[5,1]'      0.716706      none
+79    'I9[5,2]'      0             none
+80    'I9[5,3]'      0.283294      none
+81    'I10[1,1]'     0             none
+82    'I10[1,2]'     0             none
+83    'I10[1,3]'     0.011621      none
+84    'I10[2,1]'     0             none
+85    'I10[2,2]'    -1.11022e-16   none
+86    'I10[2,3]'     0             none
+87    'I10[3,1]'     0             none
+88    'I10[3,2]'     0             none
+89    'I10[3,3]'     0             none
+90    'I10[4,1]'     0             none
+91    'I10[4,2]'     0             none
+92    'I10[4,3]'     0             none
+93    'I10[5,1]'    -1.11022e-16   none
+94    'I10[5,2]'     0             none
+95    'I10[5,3]'     0             none
+96    'I11[1,1]'     0             none
+97    'I11[1,2]'     0             none
+98    'I11[1,3]'     0             none
+99    'I11[2,1]'     0             none
+100   'I11[2,2]'     0             none
+101   'I11[2,3]'     0             none
+102   'I11[3,1]'     0             none
+103   'I11[3,2]'     0             none
+104   'I11[3,3]'     0             none
+105   'I11[4,1]'     0             none
+106   'I11[4,2]'     0             none
+107   'I11[4,3]'     0             none
+108   'I11[5,1]'     0             none
+109   'I11[5,2]'     0             none
+110   'I11[5,3]'     0             none
+;
+
+MIP3 quadratic CG_multi_5_3_6 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value  1.71885632093     
+ Preprocessing found feasible solution with value 0.266880291321     
+ Preprocessing found feasible solution with value 0.204288692536     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+          1             1             0.36      0.00000         0.204289    
+        164            13            29.70      0.00000         0.204289    
+        313            27            59.35      0.00000         0.204289    
+        456            40            89.04      0.00000         0.204289    
+        595            38           118.74      0.00000         0.204289    
+        760            40           148.13      0.00000         0.204289    
+        898            54           177.73      0.00000         0.204289    
+        969            56           207.73      0.00000         0.204289    
+       1064            66           237.24      0.00000         0.204289    
+*      1095             0           245.16      0.00000          0.00000    
+       1095             0           245.16      0.00000          0.00000    
+
+                         *** Normal completion ***            
+
+ Wall clock time:                   249.63
+ Total CPU time used:               245.16
+
+ Total no. of BaR iterations:    1095
+ Best solution found at node:    1095
+ Max. no. of nodes in memory:      69
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 1095 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 69
+optimum found at node 1095
+Baron run time (excluding setup) = 245.16 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var        :=
+1    'x[1,1]'     0
+2    'x[1,2]'     0.631984
+3    'x[1,3]'     0.368016
+4    'x[2,1]'     0.355248
+5    'x[2,2]'     0.586502
+6    'x[2,3]'     0.0582505
+7    'x[3,1]'     0.262619
+8    'x[3,2]'     0
+9    'x[3,3]'     0.737381
+10   'x[4,1]'     0.0771819
+11   'x[4,2]'     0.922818
+12   'x[4,3]'     0
+13   'x[5,1]'     0.390839
+14   'x[5,2]'     0.165339
+15   'x[5,3]'     0.443822
+16   't[1]'     478.756
+17   't[2]'     405.366
+18   't[3]'     513.961
+19   't[4]'     503.793
+20   't[5]'     401.014
+21   'r[1,1]'   130.282
+22   'r[1,2]'     0
+23   'r[1,3]'     0
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'     0
+27   'r[3,1]'     0
+28   'r[3,2]'    87.1169
+29   'r[3,3]'     0
+30   'r[4,1]'     0
+31   'r[4,2]'     0
+32   'r[4,3]'    90.1705
+33   'r[5,1]'     0
+34   'r[5,2]'     0
+35   'r[5,3]'     0
+36   'u[1,1]'   348.474
+37   'u[1,2]'   478.756
+38   'u[1,3]'   478.756
+39   'u[2,1]'   405.366
+40   'u[2,2]'   405.366
+41   'u[2,3]'   405.366
+42   'u[3,1]'   513.961
+43   'u[3,2]'   426.844
+44   'u[3,3]'   513.961
+45   'u[4,1]'   503.793
+46   'u[4,2]'   503.793
+47   'u[4,3]'   413.623
+48   'u[5,1]'   401.014
+49   'u[5,2]'   401.014
+50   'u[5,3]'   401.014
+51   'b[1,1]'     1
+52   'b[1,2]'     0
+53   'b[1,3]'     0
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     0
+57   'b[3,1]'     0
+58   'b[3,2]'     1
+59   'b[3,3]'     0
+60   'b[4,1]'     0
+61   'b[4,2]'     0
+62   'b[4,3]'     1
+63   'b[5,1]'     0
+64   'b[5,2]'     0
+65   'b[5,3]'     0
+66   'g[1,1]'     0
+67   'g[1,2]'     1
+68   'g[1,3]'     1
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     1
+72   'g[3,1]'     1
+73   'g[3,2]'     0
+74   'g[3,3]'     1
+75   'g[4,1]'     1
+76   'g[4,2]'     1
+77   'g[4,3]'     0
+78   'g[5,1]'     1
+79   'g[5,2]'     1
+80   'g[5,3]'     1
+;
+
+:      _conname     _con.slack   _con.sstatus    :=
+1     'I1[1]'       -2.22045e-16   none
+2     'I1[2]'        0             none
+3     'I1[3]'        0             none
+4     'I1[4]'       -1.11022e-16   none
+5     'I1[5]'       -4.44089e-16   none
+6     'I21[1]'      -1.03482e-08   none
+7     'I21[2]'      -1.24492e-08   none
+8     'I21[3]'      -2.64661e-08   none
+9     'I22[1]'      -2.21132e-09   none
+10    'I22[2]'      -2.85613e-08   none
+11    'I22[3]'      -6.83775e-09   none
+12    'I23[1]'      -1.05838e-07   none
+13    'I23[2]'      -4.39689e-08   none
+14    'I23[3]'      -1.46271e-08   none
+15    'I24[1]'      -1.06633e-09   none
+16    'I24[2]'      -2.99727e-08   none
+17    'I24[3]'      -1.93893e-10   none
+18    'I25[1]'      -1.06456e-08   none
+19    'I25[2]'      -5.6404e-09    none
+20    'I25[3]'      -1.62484e-08   none
+21    'I3[1,1]'      0             none
+22    'I3[1,2]'      0             none
+23    'I3[1,3]'      0             none
+24    'I3[2,1]'      0             none
+25    'I3[2,2]'      0             none
+26    'I3[2,3]'      0             none
+27    'I3[3,1]'      0             none
+28    'I3[3,2]'      0             none
+29    'I3[3,3]'      0             none
+30    'I3[4,1]'      0             none
+31    'I3[4,2]'      0             none
+32    'I3[4,3]'     -5.68434e-14   none
+33    'I3[5,1]'      0             none
+34    'I3[5,2]'      0             none
+35    'I3[5,3]'      0             none
+36    'I4[1,1]'    130.282         none
+37    'I4[1,2]'      0             none
+38    'I4[1,3]'      0             none
+39    'I4[2,1]'      0             none
+40    'I4[2,2]'      0             none
+41    'I4[2,3]'      0             none
+42    'I4[3,1]'      0             none
+43    'I4[3,2]'     87.1169        none
+44    'I4[3,3]'      0             none
+45    'I4[4,1]'      0             none
+46    'I4[4,2]'      0             none
+47    'I4[4,3]'     90.1705        none
+48    'I4[5,1]'      0             none
+49    'I4[5,2]'      0             none
+50    'I4[5,3]'      0             none
+51    'I6[1,1]'    753.718         none
+52    'I6[1,2]'      0             none
+53    'I6[1,3]'      0             none
+54    'I6[2,1]'      0             none
+55    'I6[2,2]'      0             none
+56    'I6[2,3]'      0             none
+57    'I6[3,1]'      0             none
+58    'I6[3,2]'    725.883         none
+59    'I6[3,3]'      0             none
+60    'I6[4,1]'      0             none
+61    'I6[4,2]'      0             none
+62    'I6[4,3]'    765.829         none
+63    'I6[5,1]'      0             none
+64    'I6[5,2]'      0             none
+65    'I6[5,3]'      0             none
+66    'I9[1,1]'      0             none
+67    'I9[1,2]'      0.368016      none
+68    'I9[1,3]'      0.631984      none
+69    'I9[2,1]'      0.644752      none
+70    'I9[2,2]'      0.413498      none
+71    'I9[2,3]'      0.941749      none
+72    'I9[3,1]'      0.737381      none
+73    'I9[3,2]'      0             none
+74    'I9[3,3]'      0.262619      none
+75    'I9[4,1]'      0.922818      none
+76    'I9[4,2]'      0.0771819     none
+77    'I9[4,3]'      0             none
+78    'I9[5,1]'      0.609161      none
+79    'I9[5,2]'      0.834661      none
+80    'I9[5,3]'      0.556178      none
+81    'I10[1,1]'     0             none
+82    'I10[1,2]'     0             none
+83    'I10[1,3]'     0             none
+84    'I10[2,1]'     0             none
+85    'I10[2,2]'     0             none
+86    'I10[2,3]'     0             none
+87    'I10[3,1]'     0             none
+88    'I10[3,2]'     0             none
+89    'I10[3,3]'     0             none
+90    'I10[4,1]'     0             none
+91    'I10[4,2]'     0             none
+92    'I10[4,3]'     0             none
+93    'I10[5,1]'     0             none
+94    'I10[5,2]'     0             none
+95    'I10[5,3]'     0             none
+96    'I11[1,1]'     0             none
+97    'I11[1,2]'     0             none
+98    'I11[1,3]'     0             none
+99    'I11[2,1]'     0             none
+100   'I11[2,2]'     0             none
+101   'I11[2,3]'     0             none
+102   'I11[3,1]'     0             none
+103   'I11[3,2]'     0             none
+104   'I11[3,3]'     0             none
+105   'I11[4,1]'     0             none
+106   'I11[4,2]'     0             none
+107   'I11[4,3]'     0             none
+108   'I11[5,1]'     0             none
+109   'I11[5,2]'     0             none
+110   'I11[5,3]'     0             none
+;
+
+MIP3 quadratic CG_multi_5_3_7 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value  1.46213481200     
+ Preprocessing found feasible solution with value  1.00000000000     
+ Preprocessing found feasible solution with value 0.773753061862     
+ Preprocessing found feasible solution with value 0.755438404499     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+          1             1             0.44      0.00000         0.755438    
+*        22            12             3.30      0.00000         0.691651    
+*        30            16             4.92      0.00000         0.593068    
+*       111            22            15.94      0.00000         0.578285    
+        272            47            45.09      0.00000         0.578285    
+        490            61            74.31      0.00000         0.578285    
+        666            73           103.96      0.00000         0.578285    
+        772            75           133.48      0.00000         0.578285    
+        904            96           162.86      0.00000         0.578285    
+       1036           111           193.04      0.00000         0.578285    
+       1189           114           223.01      0.00000         0.578285    
+*      1317           118           249.44      0.00000         0.496845    
+       1487           143           279.39      0.00000         0.496845    
+       1645           161           309.39      0.00000         0.496845    
+       1794           165           339.01      0.00000         0.496845    
+       1925           180           368.80      0.00000         0.496845    
+       2056           189           397.90      0.00000         0.496845    
+       2197           187           427.30      0.00000         0.496845    
+       2342           224           456.88      0.00000         0.496845    
+*      2403           141           479.95      0.00000         0.295216    
+*      2532           152           507.05      0.00000         0.257723    
+       2657           164           536.33      0.00000         0.257723    
+       2755           176           566.09      0.00000         0.257723    
+       2869           179           595.97      0.00000         0.257723    
+       2973           178           625.66      0.00000         0.257723    
+       3088           182           655.83      0.00000         0.257723    
+       3274           201           685.78      0.00000         0.257723    
+       3353           200           715.89      0.00000         0.257723    
+       3433           198           745.82      0.00000         0.257723    
+*      3512           165           763.49      0.00000         0.155905    
+       3664           182           793.56      0.00000         0.155905    
+*      3792           180           812.79      0.00000         0.877398E-01
+       3985           199           842.98      0.00000         0.877398E-01
+       4179           207           872.97      0.00000         0.877398E-01
+       4318           213           900.00      0.00000         0.877398E-01
+
+                    *** Max. allowable time exceeded ***      
+
+ Wall clock time:                   911.13
+ Total CPU time used:               900.00
+
+ Total no. of BaR iterations:    4318
+ Best solution found at node:    3792
+ Max. no. of nodes in memory:     231
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 4318 iterations, CPU time limit reached.
+Objective 0.08773976283
+Objective lower bound = 0, upper bound = 0.0877397628258
+barstatus = 4, modelstatus = 4
+max nodes in memory = 231
+optimum found at node 3792
+Baron run time (excluding setup) = 900 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = limit
+
+:    _varname      _var        :=
+1    'x[1,1]'     0
+2    'x[1,2]'     0.111749
+3    'x[1,3]'     0.888251
+4    'x[2,1]'     0.438527
+5    'x[2,2]'     0.561473
+6    'x[2,3]'     0
+7    'x[3,1]'     0
+8    'x[3,2]'     0.944989
+9    'x[3,3]'     0.0550112
+10   'x[4,1]'     0.253941
+11   'x[4,2]'     0.0327285
+12   'x[4,3]'     0.71333
+13   'x[5,1]'     0.209024
+14   'x[5,2]'     0.790976
+15   'x[5,3]'     0
+16   't[1]'     403.344
+17   't[2]'     525.118
+18   't[3]'     485.736
+19   't[4]'     452.561
+20   't[5]'     420.802
+21   'r[1,1]'    15.0854
+22   'r[1,2]'     0
+23   'r[1,3]'     0
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'    72.6473
+27   'r[3,1]'   139.691
+28   'r[3,2]'     0
+29   'r[3,3]'    30.116
+30   'r[4,1]'     0
+31   'r[4,2]'     0
+32   'r[4,3]'     0
+33   'r[5,1]'     0
+34   'r[5,2]'     0
+35   'r[5,3]'     0
+36   'u[1,1]'   388.258
+37   'u[1,2]'   403.344
+38   'u[1,3]'   403.344
+39   'u[2,1]'   525.118
+40   'u[2,2]'   525.118
+41   'u[2,3]'   452.471
+42   'u[3,1]'   346.045
+43   'u[3,2]'   485.736
+44   'u[3,3]'   455.62
+45   'u[4,1]'   452.561
+46   'u[4,2]'   452.561
+47   'u[4,3]'   452.561
+48   'u[5,1]'   420.802
+49   'u[5,2]'   420.802
+50   'u[5,3]'   420.802
+51   'b[1,1]'     1
+52   'b[1,2]'     0
+53   'b[1,3]'     0
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     1
+57   'b[3,1]'     1
+58   'b[3,2]'     0
+59   'b[3,3]'     1
+60   'b[4,1]'     0
+61   'b[4,2]'     1
+62   'b[4,3]'     0
+63   'b[5,1]'     0
+64   'b[5,2]'     0
+65   'b[5,3]'     0
+66   'g[1,1]'     0
+67   'g[1,2]'     1
+68   'g[1,3]'     1
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     0
+72   'g[3,1]'     0
+73   'g[3,2]'     1
+74   'g[3,3]'     0.0550112
+75   'g[4,1]'     1
+76   'g[4,2]'     0.0327285
+77   'g[4,3]'     1
+78   'g[5,1]'     1
+79   'g[5,2]'     1
+80   'g[5,3]'     1
+;
+
+:      _conname     _con.slack   _con.sstatus    :=
+1     'I1[1]'       -1.11022e-16   none
+2     'I1[2]'        0             none
+3     'I1[3]'        0             none
+4     'I1[4]'        0             none
+5     'I1[5]'       -1.11022e-16   none
+6     'I21[1]'      -6.13909e-12   none
+7     'I21[2]'      -4.22347e-11   none
+8     'I21[3]'      -1.39266e-11   none
+9     'I22[1]'      -4.82032e-11   none
+10    'I22[2]'      -6.70752e-12   none
+11    'I22[3]'      -1.89516e-10   none
+12    'I23[1]'      -1.00329e-10   none
+13    'I23[2]'      -4.54179e-11   none
+14    'I23[3]'      -2.03499e-11   none
+15    'I24[1]'      -2.36469e-11   none
+16    'I24[2]'      -7.17364e-11   none
+17    'I24[3]'      -4.12115e-11   none
+18    'I25[1]'      -6.753e-11     none
+19    'I25[2]'      -4.39968e-11   none
+20    'I25[3]'      -9.32232e-11   none
+21    'I3[1,1]'     -1.13687e-13   none
+22    'I3[1,2]'     -5.68434e-14   none
+23    'I3[1,3]'      0             none
+24    'I3[2,1]'      0             none
+25    'I3[2,2]'      0             none
+26    'I3[2,3]'     -1.13687e-13   none
+27    'I3[3,1]'     -5.68434e-14   none
+28    'I3[3,2]'      0             none
+29    'I3[3,3]'     -5.68434e-14   none
+30    'I3[4,1]'      0             none
+31    'I3[4,2]'      0             none
+32    'I3[4,3]'      0             none
+33    'I3[5,1]'      0             none
+34    'I3[5,2]'      0             none
+35    'I3[5,3]'      0             none
+36    'I4[1,1]'     15.0854        none
+37    'I4[1,2]'     -5.68434e-14   none
+38    'I4[1,3]'      0             none
+39    'I4[2,1]'      0             none
+40    'I4[2,2]'      0             none
+41    'I4[2,3]'     72.6473        none
+42    'I4[3,1]'    139.691         none
+43    'I4[3,2]'      0             none
+44    'I4[3,3]'     30.116         none
+45    'I4[4,1]'      0             none
+46    'I4[4,2]'      0             none
+47    'I4[4,3]'      0             none
+48    'I4[5,1]'      0             none
+49    'I4[5,2]'      0             none
+50    'I4[5,3]'      0             none
+51    'I6[1,1]'    671.915         none
+52    'I6[1,2]'      0             none
+53    'I6[1,3]'      0             none
+54    'I6[2,1]'      0             none
+55    'I6[2,2]'      0             none
+56    'I6[2,3]'    722.353         none
+57    'I6[3,1]'    764.309         none
+58    'I6[3,2]'      0             none
+59    'I6[3,3]'    873.884         none
+60    'I6[4,1]'      0             none
+61    'I6[4,2]'    844             none
+62    'I6[4,3]'      0             none
+63    'I6[5,1]'      0             none
+64    'I6[5,2]'      0             none
+65    'I6[5,3]'      0             none
+66    'I9[1,1]'      0             none
+67    'I9[1,2]'      0.888251      none
+68    'I9[1,3]'      0.111749      none
+69    'I9[2,1]'      0.561473      none
+70    'I9[2,2]'      0.438527      none
+71    'I9[2,3]'      0             none
+72    'I9[3,1]'      0             none
+73    'I9[3,2]'      0.0550112     none
+74    'I9[3,3]'      0             none
+75    'I9[4,1]'      0.746059      none
+76    'I9[4,2]'      0             none
+77    'I9[4,3]'      0.28667       none
+78    'I9[5,1]'      0.790976      none
+79    'I9[5,2]'      0.209024      none
+80    'I9[5,3]'      1             none
+81    'I10[1,1]'     0             none
+82    'I10[1,2]'     0             none
+83    'I10[1,3]'     0             none
+84    'I10[2,1]'     0             none
+85    'I10[2,2]'    -1.11022e-16   none
+86    'I10[2,3]'     0             none
+87    'I10[3,1]'     0             none
+88    'I10[3,2]'     0             none
+89    'I10[3,3]'     0.0550112     none
+90    'I10[4,1]'     0             none
+91    'I10[4,2]'     0.0327285     none
+92    'I10[4,3]'     0             none
+93    'I10[5,1]'     0             none
+94    'I10[5,2]'     0             none
+95    'I10[5,3]'     0             none
+96    'I11[1,1]'     0             none
+97    'I11[1,2]'     0             none
+98    'I11[1,3]'     0             none
+99    'I11[2,1]'     0             none
+100   'I11[2,2]'     0             none
+101   'I11[2,3]'     0             none
+102   'I11[3,1]'     0             none
+103   'I11[3,2]'     0             none
+104   'I11[3,3]'     0             none
+105   'I11[4,1]'     0             none
+106   'I11[4,2]'     0             none
+107   'I11[4,3]'     0             none
+108   'I11[5,1]'     0             none
+109   'I11[5,2]'     0             none
+110   'I11[5,3]'     0             none
+;
+
+MIP3 quadratic CG_multi_5_3_8 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value  1.35902432197     
+ Preprocessing found feasible solution with value  1.12283043425     
+ Preprocessing found feasible solution with value 0.524577625194     
+ Preprocessing found feasible solution with value 0.308257541606     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+*         1             1             0.31      0.00000         0.490170E-01
+          1             1             0.33      0.00000         0.490170E-01
+        160            19            30.25      0.00000         0.490170E-01
+        354            28            60.17      0.00000         0.490170E-01
+        580            35            90.12      0.00000         0.490170E-01
+        795            44           120.22      0.00000         0.490170E-01
+        956            62           150.27      0.00000         0.490170E-01
+       1146            78           180.24      0.00000         0.490170E-01
+       1325            96           210.21      0.00000         0.490170E-01
+       1527           114           240.24      0.00000         0.490170E-01
+       1748           143           270.16      0.00000         0.490170E-01
+       1967           159           300.15      0.00000         0.490170E-01
+       2119           164           330.19      0.00000         0.490170E-01
+       2296           173           360.60      0.00000         0.490170E-01
+       2462           183           390.47      0.00000         0.490170E-01
+       2636           198           420.53      0.00000         0.490170E-01
+       2784           204           450.78      0.00000         0.490170E-01
+*      2907             0           477.48      0.00000          0.00000    
+       2907             0           477.48      0.00000          0.00000    
+
+                         *** Normal completion ***            
+
+ Wall clock time:                   479.00
+ Total CPU time used:               477.48
+
+ Total no. of BaR iterations:    2907
+ Best solution found at node:    2907
+ Max. no. of nodes in memory:     211
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 2907 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 211
+optimum found at node 2907
+Baron run time (excluding setup) = 477.48 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname       _var         :=
+1    'x[1,1]'     0.58055
+2    'x[1,2]'     0.246027
+3    'x[1,3]'     0.173423
+4    'x[2,1]'     0.000834469
+5    'x[2,2]'     0.395329
+6    'x[2,3]'     0.603837
+7    'x[3,1]'     0.144997
+8    'x[3,2]'     0.11461
+9    'x[3,3]'     0.740393
+10   'x[4,1]'     0
+11   'x[4,2]'     0.627287
+12   'x[4,3]'     0.372713
+13   'x[5,1]'     0.064843
+14   'x[5,2]'     0.74324
+15   'x[5,3]'     0.191917
+16   't[1]'     518.45
+17   't[2]'     473.236
+18   't[3]'     491.945
+19   't[4]'     554.08
+20   't[5]'     500.418
+21   'r[1,1]'     0
+22   'r[1,2]'     0
+23   'r[1,3]'     0
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'     0
+27   'r[3,1]'     0
+28   'r[3,2]'     0
+29   'r[3,3]'     0
+30   'r[4,1]'    67.0651
+31   'r[4,2]'     0
+32   'r[4,3]'     0
+33   'r[5,1]'     0
+34   'r[5,2]'     0
+35   'r[5,3]'     0
+36   'u[1,1]'   518.45
+37   'u[1,2]'   518.45
+38   'u[1,3]'   518.45
+39   'u[2,1]'   473.236
+40   'u[2,2]'   473.236
+41   'u[2,3]'   473.236
+42   'u[3,1]'   491.945
+43   'u[3,2]'   491.945
+44   'u[3,3]'   491.945
+45   'u[4,1]'   487.015
+46   'u[4,2]'   554.08
+47   'u[4,3]'   554.08
+48   'u[5,1]'   500.418
+49   'u[5,2]'   500.418
+50   'u[5,3]'   500.418
+51   'b[1,1]'     0
+52   'b[1,2]'     0
+53   'b[1,3]'     0
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     0
+57   'b[3,1]'     0
+58   'b[3,2]'     0
+59   'b[3,3]'     0
+60   'b[4,1]'     1
+61   'b[4,2]'     0
+62   'b[4,3]'     0
+63   'b[5,1]'     0
+64   'b[5,2]'     0
+65   'b[5,3]'     0
+66   'g[1,1]'     1
+67   'g[1,2]'     1
+68   'g[1,3]'     1
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     1
+72   'g[3,1]'     1
+73   'g[3,2]'     1
+74   'g[3,3]'     1
+75   'g[4,1]'     0
+76   'g[4,2]'     1
+77   'g[4,3]'     1
+78   'g[5,1]'     1
+79   'g[5,2]'     1
+80   'g[5,3]'     1
+;
+
+:      _conname     _con.slack   _con.sstatus    :=
+1     'I1[1]'        0             none
+2     'I1[2]'        0             none
+3     'I1[3]'        0             none
+4     'I1[4]'       -3.33067e-16   none
+5     'I1[5]'        0             none
+6     'I21[1]'      -1.13687e-13   none
+7     'I21[2]'      -1.13687e-13   none
+8     'I21[3]'      -2.27374e-13   none
+9     'I22[1]'      -5.68434e-14   none
+10    'I22[2]'       0             none
+11    'I22[3]'      -1.13687e-13   none
+12    'I23[1]'      -5.68434e-14   none
+13    'I23[2]'      -5.68434e-14   none
+14    'I23[3]'      -5.68434e-14   none
+15    'I24[1]'      -2.27374e-13   none
+16    'I24[2]'       0             none
+17    'I24[3]'      -3.41061e-13   none
+18    'I25[1]'      -1.7053e-13    none
+19    'I25[2]'      -2.84217e-13   none
+20    'I25[3]'      -5.68434e-14   none
+21    'I3[1,1]'      0             none
+22    'I3[1,2]'      0             none
+23    'I3[1,3]'      0             none
+24    'I3[2,1]'      0             none
+25    'I3[2,2]'     -5.68434e-14   none
+26    'I3[2,3]'      0             none
+27    'I3[3,1]'      0             none
+28    'I3[3,2]'      0             none
+29    'I3[3,3]'      0             none
+30    'I3[4,1]'     -1.13687e-13   none
+31    'I3[4,2]'      0             none
+32    'I3[4,3]'      0             none
+33    'I3[5,1]'      0             none
+34    'I3[5,2]'      0             none
+35    'I3[5,3]'      0             none
+36    'I4[1,1]'      0             none
+37    'I4[1,2]'      0             none
+38    'I4[1,3]'      0             none
+39    'I4[2,1]'      0             none
+40    'I4[2,2]'     -5.68434e-14   none
+41    'I4[2,3]'      0             none
+42    'I4[3,1]'      0             none
+43    'I4[3,2]'      0             none
+44    'I4[3,3]'      0             none
+45    'I4[4,1]'     67.0651        none
+46    'I4[4,2]'      0             none
+47    'I4[4,3]'      0             none
+48    'I4[5,1]'      0             none
+49    'I4[5,2]'      0             none
+50    'I4[5,3]'      0             none
+51    'I6[1,1]'      0             none
+52    'I6[1,2]'      0             none
+53    'I6[1,3]'      0             none
+54    'I6[2,1]'      0             none
+55    'I6[2,2]'      0             none
+56    'I6[2,3]'      0             none
+57    'I6[3,1]'      0             none
+58    'I6[3,2]'      0             none
+59    'I6[3,3]'      0             none
+60    'I6[4,1]'    797.935         none
+61    'I6[4,2]'      0             none
+62    'I6[4,3]'      0             none
+63    'I6[5,1]'      0             none
+64    'I6[5,2]'      0             none
+65    'I6[5,3]'      0             none
+66    'I9[1,1]'      0.41945       none
+67    'I9[1,2]'      0.753973      none
+68    'I9[1,3]'      0.826577      none
+69    'I9[2,1]'      0.999166      none
+70    'I9[2,2]'      0.604671      none
+71    'I9[2,3]'      0.396163      none
+72    'I9[3,1]'      0.855003      none
+73    'I9[3,2]'      0.88539       none
+74    'I9[3,3]'      0.259607      none
+75    'I9[4,1]'      0             none
+76    'I9[4,2]'      0.372713      none
+77    'I9[4,3]'      0.627287      none
+78    'I9[5,1]'      0.935157      none
+79    'I9[5,2]'      0.25676       none
+80    'I9[5,3]'      0.808083      none
+81    'I10[1,1]'     0             none
+82    'I10[1,2]'     0             none
+83    'I10[1,3]'    -1.11022e-16   none
+84    'I10[2,1]'     0             none
+85    'I10[2,2]'     0             none
+86    'I10[2,3]'     0             none
+87    'I10[3,1]'    -1.11022e-16   none
+88    'I10[3,2]'     0             none
+89    'I10[3,3]'     0             none
+90    'I10[4,1]'     0             none
+91    'I10[4,2]'     0             none
+92    'I10[4,3]'     0             none
+93    'I10[5,1]'     0             none
+94    'I10[5,2]'     0             none
+95    'I10[5,3]'     0             none
+96    'I11[1,1]'     0             none
+97    'I11[1,2]'     0             none
+98    'I11[1,3]'     0             none
+99    'I11[2,1]'     0             none
+100   'I11[2,2]'     0             none
+101   'I11[2,3]'     0             none
+102   'I11[3,1]'     0             none
+103   'I11[3,2]'     0             none
+104   'I11[3,3]'     0             none
+105   'I11[4,1]'     0             none
+106   'I11[4,2]'     0             none
+107   'I11[4,3]'     0             none
+108   'I11[5,1]'     0             none
+109   'I11[5,2]'     0             none
+110   'I11[5,3]'     0             none
+;
+
+MIP3 quadratic CG_multi_5_3_9 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value 0.483144704128     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+*         1             1             0.26      0.00000         0.334644    
+          1             1             0.41      0.00000         0.334644    
+*         2             2             0.52      0.00000         0.256470    
+        172             9            30.52      0.00000         0.256470    
+        337            22            60.53      0.00000         0.256470    
+        483            33            90.52      0.00000         0.256470    
+*       605            28           103.83      0.00000         0.157713    
+        821            44           133.98      0.00000         0.157713    
+        948            42           163.98      0.00000         0.157713    
+       1094            56           194.02      0.00000         0.157713    
+       1264            74           223.93      0.00000         0.157713    
+       1416            73           253.87      0.00000         0.157713    
+       1549            89           283.79      0.00000         0.157713    
+       1569            90           288.76      0.00000         0.157713    
+       1621            93           317.23      0.00000         0.157713    
+       1763           113           346.76      0.00000         0.157713    
+       1867           121           376.75      0.00000         0.157713    
+       1974           132           406.45      0.00000         0.157713    
+       2102           143           436.19      0.00000         0.157713    
+       2217           144           466.02      0.00000         0.157713    
+       2309           161           495.99      0.00000         0.157713    
+       2365           159           525.84      0.00000         0.157713    
+       2444           170           555.55      0.00000         0.157713    
+*      2486             0           571.10      0.00000          0.00000    
+       2486             0           571.10      0.00000          0.00000    
+
+                         *** Normal completion ***            
+
+ Wall clock time:                   695.35
+ Total CPU time used:               571.10
+
+ Total no. of BaR iterations:    2486
+ Best solution found at node:    2486
+ Max. no. of nodes in memory:     175
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 2486 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 175
+optimum found at node 2486
+Baron run time (excluding setup) = 571.09 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var        :=
+1    'x[1,1]'     0.400568
+2    'x[1,2]'     0.431362
+3    'x[1,3]'     0.16807
+4    'x[2,1]'     0.0706258
+5    'x[2,2]'     0.810562
+6    'x[2,3]'     0.118813
+7    'x[3,1]'     0.496075
+8    'x[3,2]'     0.12125
+9    'x[3,3]'     0.382675
+10   'x[4,1]'     0.47823
+11   'x[4,2]'     0.375346
+12   'x[4,3]'     0.146424
+13   'x[5,1]'     0.905836
+14   'x[5,2]'     0.0941643
+15   'x[5,3]'     0
+16   't[1]'     524.864
+17   't[2]'     541.994
+18   't[3]'     520.711
+19   't[4]'     512.367
+20   't[5]'     497.666
+21   'r[1,1]'     0
+22   'r[1,2]'     0
+23   'r[1,3]'     0
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'     0
+27   'r[3,1]'     0
+28   'r[3,2]'     0
+29   'r[3,3]'     0
+30   'r[4,1]'     0
+31   'r[4,2]'     0
+32   'r[4,3]'     0
+33   'r[5,1]'     0
+34   'r[5,2]'     0
+35   'r[5,3]'    16.8798
+36   'u[1,1]'   524.864
+37   'u[1,2]'   524.864
+38   'u[1,3]'   524.864
+39   'u[2,1]'   541.994
+40   'u[2,2]'   541.994
+41   'u[2,3]'   541.994
+42   'u[3,1]'   520.711
+43   'u[3,2]'   520.711
+44   'u[3,3]'   520.711
+45   'u[4,1]'   512.367
+46   'u[4,2]'   512.367
+47   'u[4,3]'   512.367
+48   'u[5,1]'   497.666
+49   'u[5,2]'   497.666
+50   'u[5,3]'   480.787
+51   'b[1,1]'     0
+52   'b[1,2]'     0
+53   'b[1,3]'     0
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     0
+57   'b[3,1]'     0
+58   'b[3,2]'     0
+59   'b[3,3]'     0
+60   'b[4,1]'     0
+61   'b[4,2]'     0
+62   'b[4,3]'     0
+63   'b[5,1]'     0
+64   'b[5,2]'     0
+65   'b[5,3]'     1
+66   'g[1,1]'     1
+67   'g[1,2]'     1
+68   'g[1,3]'     1
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     1
+72   'g[3,1]'     1
+73   'g[3,2]'     1
+74   'g[3,3]'     1
+75   'g[4,1]'     1
+76   'g[4,2]'     1
+77   'g[4,3]'     1
+78   'g[5,1]'     1
+79   'g[5,2]'     1
+80   'g[5,3]'     0
+;
+
+:      _conname     _con.slack   _con.sstatus    :=
+1     'I1[1]'        0             none
+2     'I1[2]'        0             none
+3     'I1[3]'       -2.22045e-16   none
+4     'I1[4]'       -1.11022e-16   none
+5     'I1[5]'        0             none
+6     'I21[1]'      -8.6244e-09    none
+7     'I21[2]'      -4.01628e-08   none
+8     'I21[3]'      -3.56791e-08   none
+9     'I22[1]'      -1.15913e-08   none
+10    'I22[2]'      -3.53918e-09   none
+11    'I22[3]'      -1.59912e-09   none
+12    'I23[1]'      -9.71693e-09   none
+13    'I23[2]'      -9.70317e-10   none
+14    'I23[3]'      -6.09066e-09   none
+15    'I24[1]'      -2.97626e-08   none
+16    'I24[2]'      -1.18238e-08   none
+17    'I24[3]'      -1.58401e-08   none
+18    'I25[1]'      -1.07434e-08   none
+19    'I25[2]'      -2.63637e-08   none
+20    'I25[3]'      -1.98816e-09   none
+21    'I3[1,1]'      0             none
+22    'I3[1,2]'     -1.13687e-13   none
+23    'I3[1,3]'      0             none
+24    'I3[2,1]'      0             none
+25    'I3[2,2]'      0             none
+26    'I3[2,3]'      0             none
+27    'I3[3,1]'      0             none
+28    'I3[3,2]'      0             none
+29    'I3[3,3]'      0             none
+30    'I3[4,1]'      0             none
+31    'I3[4,2]'      0             none
+32    'I3[4,3]'      0             none
+33    'I3[5,1]'      0             none
+34    'I3[5,2]'      0             none
+35    'I3[5,3]'     -2.27374e-13   none
+36    'I4[1,1]'      0             none
+37    'I4[1,2]'      1.13687e-13   none
+38    'I4[1,3]'      0             none
+39    'I4[2,1]'      0             none
+40    'I4[2,2]'      0             none
+41    'I4[2,3]'      0             none
+42    'I4[3,1]'      0             none
+43    'I4[3,2]'      0             none
+44    'I4[3,3]'      0             none
+45    'I4[4,1]'      0             none
+46    'I4[4,2]'      0             none
+47    'I4[4,3]'      0             none
+48    'I4[5,1]'      0             none
+49    'I4[5,2]'      0             none
+50    'I4[5,3]'     16.8798        none
+51    'I6[1,1]'      0             none
+52    'I6[1,2]'      0             none
+53    'I6[1,3]'      0             none
+54    'I6[2,1]'      0             none
+55    'I6[2,2]'      0             none
+56    'I6[2,3]'      0             none
+57    'I6[3,1]'      0             none
+58    'I6[3,2]'      0             none
+59    'I6[3,3]'      0             none
+60    'I6[4,1]'      0             none
+61    'I6[4,2]'      0             none
+62    'I6[4,3]'      0             none
+63    'I6[5,1]'      0             none
+64    'I6[5,2]'      0             none
+65    'I6[5,3]'    930.12          none
+66    'I9[1,1]'      0.599432      none
+67    'I9[1,2]'      0.568638      none
+68    'I9[1,3]'      0.83193       none
+69    'I9[2,1]'      0.929374      none
+70    'I9[2,2]'      0.189438      none
+71    'I9[2,3]'      0.881187      none
+72    'I9[3,1]'      0.503925      none
+73    'I9[3,2]'      0.87875       none
+74    'I9[3,3]'      0.617325      none
+75    'I9[4,1]'      0.52177       none
+76    'I9[4,2]'      0.624654      none
+77    'I9[4,3]'      0.853576      none
+78    'I9[5,1]'      0.0941643     none
+79    'I9[5,2]'      0.905836      none
+80    'I9[5,3]'      0             none
+81    'I10[1,1]'     0             none
+82    'I10[1,2]'     0             none
+83    'I10[1,3]'     0             none
+84    'I10[2,1]'     0             none
+85    'I10[2,2]'     0             none
+86    'I10[2,3]'    -1.11022e-16   none
+87    'I10[3,1]'     0             none
+88    'I10[3,2]'     0             none
+89    'I10[3,3]'     0             none
+90    'I10[4,1]'     0             none
+91    'I10[4,2]'    -1.11022e-16   none
+92    'I10[4,3]'     0             none
+93    'I10[5,1]'    -1.11022e-16   none
+94    'I10[5,2]'     0             none
+95    'I10[5,3]'     0             none
+96    'I11[1,1]'     0             none
+97    'I11[1,2]'     0             none
+98    'I11[1,3]'     0             none
+99    'I11[2,1]'     0             none
+100   'I11[2,2]'     0             none
+101   'I11[2,3]'     0             none
+102   'I11[3,1]'     0             none
+103   'I11[3,2]'     0             none
+104   'I11[3,3]'     0             none
+105   'I11[4,1]'     0             none
+106   'I11[4,2]'     0             none
+107   'I11[4,3]'     0             none
+108   'I11[5,1]'     0             none
+109   'I11[5,2]'     0             none
+110   'I11[5,3]'     0             none
+;
+
+MIP3 quadratic CG_multi_5_3_10 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value 0.833073735702     
+ Preprocessing found feasible solution with value 0.304891307192     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+          1             1             0.53      0.00000         0.304891    
+*        20            11             3.56      0.00000         0.280269    
+        148            15            33.02      0.00000         0.280269    
+        315            23            62.81      0.00000         0.280269    
+        476            31            92.72      0.00000         0.280269    
+        582            30           122.34      0.00000         0.280269    
+        682            42           152.22      0.00000         0.280269    
+        822            61           182.00      0.00000         0.280269    
+        943            67           211.69      0.00000         0.280269    
+       1075            76           241.54      0.00000         0.280269    
+       1148            92           271.59      0.00000         0.280269    
+       1215            91           301.17      0.00000         0.280269    
+       1285            98           331.19      0.00000         0.280269    
+       1405           113           361.41      0.00000         0.280269    
+       1490           123           391.22      0.00000         0.280269    
+       1569           134           420.36      0.00000         0.280269    
+       1657           144           450.16      0.00000         0.280269    
+       1751           154           480.13      0.00000         0.280269    
+       1809           154           510.64      0.00000         0.280269    
+       1845           166           540.90      0.00000         0.280269    
+       1881           164           570.95      0.00000         0.280269    
+       1939           171           600.82      0.00000         0.280269    
+       2003           171           630.72      0.00000         0.280269    
+       2112           177           660.46      0.00000         0.280269    
+       2163           190           691.10      0.00000         0.280269    
+       2194           188           721.12      0.00000         0.280269    
+       2270           198           752.36      0.00000         0.280269    
+       2363           205           783.33      0.00000         0.280269    
+       2448           214           813.51      0.00000         0.280269    
+       2484           214           843.27      0.00000         0.280269    
+       2541           221           873.01      0.00000         0.280269    
+       2576           220           900.00      0.00000         0.280269    
+
+                    *** Max. allowable time exceeded ***      
+
+ Wall clock time:                   912.09
+ Total CPU time used:               900.00
+
+ Total no. of BaR iterations:    2576
+ Best solution found at node:      20
+ Max. no. of nodes in memory:     222
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 2576 iterations, CPU time limit reached.
+Objective 0.2802686998
+Objective lower bound = 0, upper bound = 0.280268699758
+barstatus = 4, modelstatus = 4
+max nodes in memory = 222
+optimum found at node 20
+Baron run time (excluding setup) = 900 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = limit
+
+:    _varname      _var       :=
+1    'x[1,1]'     0.117028
+2    'x[1,2]'     0.882972
+3    'x[1,3]'     0
+4    'x[2,1]'     1
+5    'x[2,2]'     0
+6    'x[2,3]'     0
+7    'x[3,1]'     0.400923
+8    'x[3,2]'     0.599077
+9    'x[3,3]'     0
+10   'x[4,1]'     0.836759
+11   'x[4,2]'     0
+12   'x[4,3]'     0.163241
+13   'x[5,1]'     0
+14   'x[5,2]'     0
+15   'x[5,3]'     1
+16   't[1]'     397.721
+17   't[2]'     527.555
+18   't[3]'     574.664
+19   't[4]'     655.114
+20   't[5]'     407.257
+21   'r[1,1]'    81.6132
+22   'r[1,2]'     0
+23   'r[1,3]'    89.3085
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'   201.643
+27   'r[3,1]'     0
+28   'r[3,2]'     0
+29   'r[3,3]'   240.87
+30   'r[4,1]'     0
+31   'r[4,2]'   172.201
+32   'r[4,3]'   353.11
+33   'r[5,1]'    32.1447
+34   'r[5,2]'     0
+35   'r[5,3]'     0
+36   'u[1,1]'   316.108
+37   'u[1,2]'   397.721
+38   'u[1,3]'   308.413
+39   'u[2,1]'   527.555
+40   'u[2,2]'   527.555
+41   'u[2,3]'   325.912
+42   'u[3,1]'   574.664
+43   'u[3,2]'   574.664
+44   'u[3,3]'   333.795
+45   'u[4,1]'   655.114
+46   'u[4,2]'   482.913
+47   'u[4,3]'   302.004
+48   'u[5,1]'   375.112
+49   'u[5,2]'   407.257
+50   'u[5,3]'   407.257
+51   'b[1,1]'     1
+52   'b[1,2]'     0
+53   'b[1,3]'     1
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     1
+57   'b[3,1]'     0
+58   'b[3,2]'     0
+59   'b[3,3]'     1
+60   'b[4,1]'     0
+61   'b[4,2]'     1
+62   'b[4,3]'     1
+63   'b[5,1]'     1
+64   'b[5,2]'     0
+65   'b[5,3]'     0
+66   'g[1,1]'     0.117028
+67   'g[1,2]'     1
+68   'g[1,3]'     0
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     0
+72   'g[3,1]'     1
+73   'g[3,2]'     1
+74   'g[3,3]'     0
+75   'g[4,1]'     1
+76   'g[4,2]'     0
+77   'g[4,3]'     0.163241
+78   'g[5,1]'     0
+79   'g[5,2]'     1
+80   'g[5,3]'     1
+;
+
+:      _conname     _con.slack   _con.sstatus    :=
+1     'I1[1]'       -1.11022e-16   none
+2     'I1[2]'        0             none
+3     'I1[3]'       -2.22045e-16   none
+4     'I1[4]'       -2.22045e-16   none
+5     'I1[5]'        0             none
+6     'I21[1]'      -5.68434e-14   none
+7     'I21[2]'      -5.68434e-14   none
+8     'I21[3]'       0             none
+9     'I22[1]'      -1.13687e-13   none
+10    'I22[2]'       0             none
+11    'I22[3]'       0             none
+12    'I23[1]'       0             none
+13    'I23[2]'      -1.13687e-13   none
+14    'I23[3]'       0             none
+15    'I24[1]'      -1.13687e-13   none
+16    'I24[2]'      -1.13687e-13   none
+17    'I24[3]'      -5.68434e-14   none
+18    'I25[1]'      -5.68434e-14   none
+19    'I25[2]'      -5.68434e-14   none
+20    'I25[3]'       0             none
+21    'I3[1,1]'     -4.54747e-13   none
+22    'I3[1,2]'      0             none
+23    'I3[1,3]'     -6.82121e-13   none
+24    'I3[2,1]'      0             none
+25    'I3[2,2]'      0             none
+26    'I3[2,3]'     -5.68434e-14   none
+27    'I3[3,1]'      0             none
+28    'I3[3,2]'      0             none
+29    'I3[3,3]'     -1.13687e-13   none
+30    'I3[4,1]'      0             none
+31    'I3[4,2]'     -5.68434e-14   none
+32    'I3[4,3]'     -2.21689e-12   none
+33    'I3[5,1]'     -5.68434e-14   none
+34    'I3[5,2]'      0             none
+35    'I3[5,3]'     -1.02318e-12   none
+36    'I4[1,1]'     81.6132        none
+37    'I4[1,2]'      0             none
+38    'I4[1,3]'     89.3085        none
+39    'I4[2,1]'      0             none
+40    'I4[2,2]'      0             none
+41    'I4[2,3]'    201.643         none
+42    'I4[3,1]'      0             none
+43    'I4[3,2]'      0             none
+44    'I4[3,3]'    240.87          none
+45    'I4[4,1]'      0             none
+46    'I4[4,2]'    172.201         none
+47    'I4[4,3]'    353.11          none
+48    'I4[5,1]'     32.1447        none
+49    'I4[5,2]'      0             none
+50    'I4[5,3]'      1.02318e-12   none
+51    'I6[1,1]'    767.387         none
+52    'I6[1,2]'      0             none
+53    'I6[1,3]'    759.692         none
+54    'I6[2,1]'      0             none
+55    'I6[2,2]'      0             none
+56    'I6[2,3]'    763.357         none
+57    'I6[3,1]'      0             none
+58    'I6[3,2]'      0             none
+59    'I6[3,3]'    621.13          none
+60    'I6[4,1]'      0             none
+61    'I6[4,2]'    693.799         none
+62    'I6[4,3]'    512.89          none
+63    'I6[5,1]'    886.855         none
+64    'I6[5,2]'      0             none
+65    'I6[5,3]'      0             none
+66    'I9[1,1]'     -5.55112e-16   none
+67    'I9[1,2]'      0.117028      none
+68    'I9[1,3]'      0             none
+69    'I9[2,1]'      0             none
+70    'I9[2,2]'      1             none
+71    'I9[2,3]'      0             none
+72    'I9[3,1]'      0.599077      none
+73    'I9[3,2]'      0.400923      none
+74    'I9[3,3]'      0             none
+75    'I9[4,1]'      0.163241      none
+76    'I9[4,2]'      0             none
+77    'I9[4,3]'      0             none
+78    'I9[5,1]'      0             none
+79    'I9[5,2]'      1             none
+80    'I9[5,3]'      0             none
+81    'I10[1,1]'     0.117028      none
+82    'I10[1,2]'     0             none
+83    'I10[1,3]'     0             none
+84    'I10[2,1]'     0             none
+85    'I10[2,2]'     0             none
+86    'I10[2,3]'     0             none
+87    'I10[3,1]'     0             none
+88    'I10[3,2]'     0             none
+89    'I10[3,3]'     0             none
+90    'I10[4,1]'     0             none
+91    'I10[4,2]'     0             none
+92    'I10[4,3]'     0.163241      none
+93    'I10[5,1]'     0             none
+94    'I10[5,2]'     0             none
+95    'I10[5,3]'     0             none
+96    'I11[1,1]'     0             none
+97    'I11[1,2]'     0             none
+98    'I11[1,3]'     0             none
+99    'I11[2,1]'     0             none
+100   'I11[2,2]'     0             none
+101   'I11[2,3]'     0             none
+102   'I11[3,1]'     0             none
+103   'I11[3,2]'     0             none
+104   'I11[3,3]'     0             none
+105   'I11[4,1]'     0             none
+106   'I11[4,2]'     0             none
+107   'I11[4,3]'     0             none
+108   'I11[5,1]'     0             none
+109   'I11[5,2]'     0             none
+110   'I11[5,3]'     0             none
+;
+
+MIP3 quadratic CG_multi_5_3_1 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=900
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value  1.06698079116     
+ Preprocessing found feasible solution with value 0.971357061039     
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+          1             1             0.41      0.00000         0.971357    
+*        22            12             3.94      0.00000         0.700458    
+*        22            12             3.98      0.00000         0.661077    
+*        85            11            12.84      0.00000         0.471700    
+*       114             6            16.53      0.00000         0.417105    
+        265            34            46.19      0.00000         0.417105    
+        373            52            75.89      0.00000         0.417105    
+        503            71           105.71      0.00000         0.417105    
+        631            86           135.81      0.00000         0.417105    
+        743            92           165.51      0.00000         0.417105    
+        853           112           195.28      0.00000         0.417105    
+        931           121           226.15      0.00000         0.417105    
+       1029           131           255.93      0.00000         0.417105    
+*      1096           127           271.44      0.00000         0.348460    
+       1149           132           304.63      0.00000         0.348460    
+       1255           137           334.18      0.00000         0.348460    
+       1360           149           364.06      0.00000         0.348460    
+       1475           160           393.91      0.00000         0.348460    
+       1553           162           423.76      0.00000         0.348460    
+       1602           161           453.40      0.00000         0.348460    
+       1698           170           483.08      0.00000         0.348460    
+       1809           168           512.56      0.00000         0.348460    
+       1938           183           542.55      0.00000         0.348460    
+       2036           191           572.38      0.00000         0.348460    
+       2112           196           602.23      0.00000         0.348460    
+       2201           199           631.98      0.00000         0.348460    
+       2317           214           661.78      0.00000         0.348460    
+       2434           226           691.58      0.00000         0.348460    
+       2506           229           721.56      0.00000         0.348460    
+       2525           233           751.36      0.00000         0.348460    
+       2607           237           781.07      0.00000         0.348460    
+       2697           248           810.76      0.00000         0.348460    
+*      2723           186           816.41      0.00000         0.183881    
+       2789           192           845.71      0.00000         0.183881    
+       2819           191           875.43      0.00000         0.183881    
+       2912           199           900.00      0.00000         0.183881    
+
+                    *** Max. allowable time exceeded ***      
+
+ Wall clock time:                   912.93
+ Total CPU time used:               900.00
+
+ Total no. of BaR iterations:    2912
+ Best solution found at node:    2723
+ Max. no. of nodes in memory:     249
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 2912 iterations, CPU time limit reached.
+Objective 0.183881304
+Objective lower bound = 0, upper bound = 0.183881304005
+barstatus = 4, modelstatus = 4
+max nodes in memory = 249
+optimum found at node 2723
+Baron run time (excluding setup) = 900 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = limit
+
+:    _varname      _var       :=
+1    'x[1,1]'     0.376186
+2    'x[1,2]'     0.493177
+3    'x[1,3]'     0.130637
+4    'x[2,1]'     0.45157
+5    'x[2,2]'     0.214288
+6    'x[2,3]'     0.334142
+7    'x[3,1]'     0.183881
+8    'x[3,2]'     0.279393
+9    'x[3,3]'     0.536726
+10   'x[4,1]'     0.184493
+11   'x[4,2]'     0.373819
+12   'x[4,3]'     0.441688
+13   'x[5,1]'     0.122518
+14   'x[5,2]'     0.877482
+15   'x[5,3]'     0
+16   't[1]'     529.731
+17   't[2]'     572.053
+18   't[3]'     559.812
+19   't[4]'     512.058
+20   't[5]'     534.921
+21   'r[1,1]'     0
+22   'r[1,2]'     0
+23   'r[1,3]'     0
+24   'r[2,1]'     0
+25   'r[2,2]'     0
+26   'r[2,3]'     0
+27   'r[3,1]'     8.83475
+28   'r[3,2]'     0
+29   'r[3,3]'     0
+30   'r[4,1]'     0
+31   'r[4,2]'     0
+32   'r[4,3]'     0
+33   'r[5,1]'     0
+34   'r[5,2]'     0
+35   'r[5,3]'     0
+36   'u[1,1]'   529.731
+37   'u[1,2]'   529.731
+38   'u[1,3]'   529.731
+39   'u[2,1]'   572.053
+40   'u[2,2]'   572.053
+41   'u[2,3]'   572.053
+42   'u[3,1]'   550.977
+43   'u[3,2]'   559.812
+44   'u[3,3]'   559.812
+45   'u[4,1]'   512.058
+46   'u[4,2]'   512.058
+47   'u[4,3]'   512.058
+48   'u[5,1]'   534.921
+49   'u[5,2]'   534.921
+50   'u[5,3]'   534.921
+51   'b[1,1]'     0
+52   'b[1,2]'     0
+53   'b[1,3]'     0
+54   'b[2,1]'     0
+55   'b[2,2]'     0
+56   'b[2,3]'     0
+57   'b[3,1]'     1
+58   'b[3,2]'     0
+59   'b[3,3]'     0
+60   'b[4,1]'     0
+61   'b[4,2]'     0
+62   'b[4,3]'     0
+63   'b[5,1]'     0
+64   'b[5,2]'     0
+65   'b[5,3]'     0
+66   'g[1,1]'     1
+67   'g[1,2]'     1
+68   'g[1,3]'     1
+69   'g[2,1]'     1
+70   'g[2,2]'     1
+71   'g[2,3]'     1
+72   'g[3,1]'     0.183881
+73   'g[3,2]'     1
+74   'g[3,3]'     1
+75   'g[4,1]'     1
+76   'g[4,2]'     1
+77   'g[4,3]'     1
+78   'g[5,1]'     1
+79   'g[5,2]'     1
+80   'g[5,3]'     1
+;
+
+:      _conname     _con.slack   _con.sstatus    :=
+1     'I1[1]'       -1.11022e-16   none
+2     'I1[2]'        0             none
+3     'I1[3]'        0             none
+4     'I1[4]'       -2.22045e-16   none
+5     'I1[5]'        0             none
+6     'I21[1]'      -3.29692e-12   none
+7     'I21[2]'      -3.9222e-11    none
+8     'I21[3]'      -5.58202e-11   none
+9     'I22[1]'      -3.56977e-11   none
+10    'I22[2]'      -8.18545e-12   none
+11    'I22[3]'      -6.59384e-11   none
+12    'I23[1]'      -1.31877e-11   none
+13    'I23[2]'      -8.69704e-11   none
+14    'I23[3]'      -1.76215e-11   none
+15    'I24[1]'      -2.66027e-11   none
+16    'I24[2]'      -8.92442e-11   none
+17    'I24[3]'      -3.51292e-11   none
+18    'I25[1]'      -8.29914e-12   none
+19    'I25[2]'      -3.81988e-11   none
+20    'I25[3]'      -3.47882e-11   none
+21    'I3[1,1]'      0             none
+22    'I3[1,2]'      0             none
+23    'I3[1,3]'      0             none
+24    'I3[2,1]'      0             none
+25    'I3[2,2]'      0             none
+26    'I3[2,3]'      0             none
+27    'I3[3,1]'      0             none
+28    'I3[3,2]'      0             none
+29    'I3[3,3]'      0             none
+30    'I3[4,1]'      0             none
+31    'I3[4,2]'      0             none
+32    'I3[4,3]'      0             none
+33    'I3[5,1]'      0             none
+34    'I3[5,2]'      0             none
+35    'I3[5,3]'      0             none
+36    'I4[1,1]'      0             none
+37    'I4[1,2]'      0             none
+38    'I4[1,3]'      0             none
+39    'I4[2,1]'      0             none
+40    'I4[2,2]'      0             none
+41    'I4[2,3]'      0             none
+42    'I4[3,1]'      8.83475       none
+43    'I4[3,2]'      0             none
+44    'I4[3,3]'      0             none
+45    'I4[4,1]'      0             none
+46    'I4[4,2]'      0             none
+47    'I4[4,3]'      0             none
+48    'I4[5,1]'      0             none
+49    'I4[5,2]'      0             none
+50    'I4[5,3]'      0             none
+51    'I6[1,1]'      0             none
+52    'I6[1,2]'      0             none
+53    'I6[1,3]'      0             none
+54    'I6[2,1]'      0             none
+55    'I6[2,2]'      0             none
+56    'I6[2,3]'      0             none
+57    'I6[3,1]'    969.165         none
+58    'I6[3,2]'      0             none
+59    'I6[3,3]'      0             none
+60    'I6[4,1]'      0             none
+61    'I6[4,2]'      0             none
+62    'I6[4,3]'      0             none
+63    'I6[5,1]'      0             none
+64    'I6[5,2]'      0             none
+65    'I6[5,3]'      0             none
+66    'I9[1,1]'      0.623814      none
+67    'I9[1,2]'      0.506823      none
+68    'I9[1,3]'      0.869363      none
+69    'I9[2,1]'      0.54843       none
+70    'I9[2,2]'      0.785712      none
+71    'I9[2,3]'      0.665858      none
+72    'I9[3,1]'      0             none
+73    'I9[3,2]'      0.720607      none
+74    'I9[3,3]'      0.463274      none
+75    'I9[4,1]'      0.815507      none
+76    'I9[4,2]'      0.626181      none
+77    'I9[4,3]'      0.558312      none
+78    'I9[5,1]'      0.877482      none
+79    'I9[5,2]'      0.122518      none
+80    'I9[5,3]'      1             none
+81    'I10[1,1]'     0             none
+82    'I10[1,2]'     0             none
+83    'I10[1,3]'     0             none
+84    'I10[2,1]'    -1.11022e-16   none
+85    'I10[2,2]'     0             none
+86    'I10[2,3]'     0             none
+87    'I10[3,1]'     0.183881      none
+88    'I10[3,2]'    -1.11022e-16   none
+89    'I10[3,3]'    -1.11022e-16   none
+90    'I10[4,1]'     0             none
+91    'I10[4,2]'     0             none
+92    'I10[4,3]'     0             none
+93    'I10[5,1]'     0             none
+94    'I10[5,2]'     0             none
+95    'I10[5,3]'     0             none
+96    'I11[1,1]'     0             none
+97    'I11[1,2]'     0             none
+98    'I11[1,3]'     0             none
+99    'I11[2,1]'     0             none
+100   'I11[2,2]'     0             none
+101   'I11[2,3]'     0             none
+102   'I11[3,1]'     0             none
+103   'I11[3,2]'     0             none
+104   'I11[3,3]'     0             none
+105   'I11[4,1]'     0             none
+106   'I11[4,2]'     0             none
+107   'I11[4,3]'     0             none
+108   'I11[5,1]'     0             none
+109   'I11[5,2]'     0             none
+110   'I11[5,3]'     0             none
+;
+
+ampl: reset;
+ampl: include '/Users/miriamfischer/Desktop/Dissertation_MF-copy/model/overview_multiplayer_outcome.run';

@@ -1,0 +1,15 @@
+Notes to the notations of the files:
+
+MIP1 is MIMLP1 for 3 players
+MIP1_version_objvar is MIMLP1(C)
+
+MIP2 is MIMLP2
+MIP2_version_obj is MIMLP2(F)
+MIP2_version is MIMLP2(C)
+MIP2_version_objvar is MIMLP2(C,F)
+
+Similar for MIP3, MIP4
+
+For 5 player games, similar but instead MIP1_5_...
+
+multilinearoptimisation_feaisbility refers to MLP2

@@ -1,0 +1,1057 @@
+Multilinear CG_3_5_1 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+*         1             0             0.07      0.00000          0.00000    
+          1             0             0.07      0.00000          0.00000    
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.08
+ Total CPU time used:                 0.07
+
+ Total no. of BaR iterations:       1
+ Best solution found at node:       1
+ Max. no. of nodes in memory:       1
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 1 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 1
+optimum found at node 1
+Baron run time (excluding setup) = 0.07 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname     _var       :=
+1    'x[1,1]'    0.286298
+2    'x[1,2]'    0
+3    'x[1,3]'    0.376158
+4    'x[1,4]'    0.337544
+5    'x[1,5]'    0
+6    'x[2,1]'    0.304044
+7    'x[2,2]'    0
+8    'x[2,3]'    0.55311
+9    'x[2,4]'    0
+10   'x[2,5]'    0.142846
+11   'x[3,1]'    0.551025
+12   'x[3,2]'    0
+13   'x[3,3]'    0
+14   'x[3,4]'    0.243799
+15   'x[3,5]'    0.205176
+16   'p[1]'     54.1058
+17   'p[2]'     50.7466
+18   'p[3]'     57.5733
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'    0             none
+2    'I11[2]'    6.42906       none
+3    'I11[3]'    0             none
+4    'I11[4]'    0             none
+5    'I11[5]'    2.42105       none
+6    'I12[1]'    7.10543e-15   none
+7    'I12[2]'    5.09288       none
+8    'I12[3]'    7.10543e-15   none
+9    'I12[4]'    1.51241       none
+10   'I12[5]'   -7.10543e-15   none
+11   'I13[1]'    0             none
+12   'I13[2]'   11.237         none
+13   'I13[3]'   12.9576        none
+14   'I13[4]'   -1.42109e-14   none
+15   'I13[5]'    0             none
+16   'I3[1]'    -4.44089e-16   none
+17   'I3[2]'    -2.22933e-13   none
+18   'I3[3]'    -2.22045e-16   none
+19   I5         -1.12834e-11   none
+;
+
+Multilinear CG_3_5_2 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value  0.00000000000     
+ Problem solved during preprocessing
+ Upper bound is  0.00000000000     
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.03
+ Total CPU time used:                 0.02
+
+ Total no. of BaR iterations:      -1
+ Best solution found at node:      -1
+ Max. no. of nodes in memory:       0
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 0 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 0
+optimum found at node -1
+Baron run time (excluding setup) = 0.02 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var       :=
+1    'x[1,1]'    0.713617
+2    'x[1,2]'    0
+3    'x[1,3]'    0
+4    'x[1,4]'    0
+5    'x[1,5]'    0.286383
+6    'x[2,1]'    0
+7    'x[2,2]'    0
+8    'x[2,3]'    0.211239
+9    'x[2,4]'    0
+10   'x[2,5]'    0.788761
+11   'x[3,1]'    0.275703
+12   'x[3,2]'    0.0809212
+13   'x[3,3]'    0.643376
+14   'x[3,4]'    0
+15   'x[3,5]'    0
+16   'p[1]'     57.8124
+17   'p[2]'     67.1732
+18   'p[3]'     52.9474
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'   -5.11591e-13   none
+2    'I11[2]'    3.70833       none
+3    'I11[3]'   12.9399        none
+4    'I11[4]'    4.38289       none
+5    'I11[5]'    8.52651e-14   none
+6    'I12[1]'    6.42833       none
+7    'I12[2]'   19.3036        none
+8    'I12[3]'   -1.27898e-13   none
+9    'I12[4]'    3.04258       none
+10   'I12[5]'    3.2685e-13    none
+11   'I13[1]'    3.55271e-14   none
+12   'I13[2]'   -7.29727e-12   none
+13   'I13[3]'    9.23706e-14   none
+14   'I13[4]'    5.20622       none
+15   'I13[5]'    4.69833       none
+16   'I3[1]'     0             none
+17   'I3[2]'    -1.11022e-16   none
+18   'I3[3]'    -2.22045e-16   none
+19   I5          6.32383e-13   none
+;
+
+Multilinear CG_3_5_3 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value  0.00000000000     
+ Problem solved during preprocessing
+ Upper bound is  0.00000000000     
+
+ Calculating duals
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.04
+ Total CPU time used:                 0.03
+
+ Total no. of BaR iterations:      -1
+ Best solution found at node:      -1
+ Max. no. of nodes in memory:       0
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 0 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 0
+optimum found at node -1
+Baron run time (excluding setup) = 0.03 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname     _var       :=
+1    'x[1,1]'    0
+2    'x[1,2]'    0
+3    'x[1,3]'    0.117647
+4    'x[1,4]'    0.882353
+5    'x[1,5]'    0
+6    'x[2,1]'    0
+7    'x[2,2]'    0.157895
+8    'x[2,3]'    0.842105
+9    'x[2,4]'    0
+10   'x[2,5]'    0
+11   'x[3,1]'    0
+12   'x[3,2]'    0
+13   'x[3,3]'    1
+14   'x[3,4]'    0
+15   'x[3,5]'    0
+16   'p[1]'     60.6842
+17   'p[2]'     47.4118
+18   'p[3]'     61.2817
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'   19.0526        none
+2    'I11[2]'   15.1053        none
+3    'I11[3]'    0             none
+4    'I11[4]'    0             none
+5    'I11[5]'    2.84211       none
+6    'I12[1]'   12.2353        none
+7    'I12[2]'   -2.97007e-12   none
+8    'I12[3]'   -5.85487e-12   none
+9    'I12[4]'   13.4706        none
+10   'I12[5]'   13.7059        none
+11   'I13[1]'   16.7585        none
+12   'I13[2]'   11.8452        none
+13   'I13[3]'   -5.74119e-12   none
+14   'I13[4]'    3.0031        none
+15   'I13[5]'   10.4025        none
+16   'I3[1]'    -8.81517e-14   none
+17   'I3[2]'     0             none
+18   'I3[3]'     0             none
+19   I5          1.64917e-11   none
+;
+
+Multilinear CG_3_5_4 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value  0.00000000000     
+ Problem solved during preprocessing
+ Upper bound is  0.00000000000     
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.03
+ Total CPU time used:                 0.02
+
+ Total no. of BaR iterations:      -1
+ Best solution found at node:      -1
+ Max. no. of nodes in memory:       0
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 0 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 0
+optimum found at node -1
+Baron run time (excluding setup) = 0.02 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname     _var       :=
+1    'x[1,1]'    0.497776
+2    'x[1,2]'    0
+3    'x[1,3]'    0.429031
+4    'x[1,4]'    0.073193
+5    'x[1,5]'    0
+6    'x[2,1]'    0.129508
+7    'x[2,2]'    0
+8    'x[2,3]'    0
+9    'x[2,4]'    0.516125
+10   'x[2,5]'    0.354367
+11   'x[3,1]'    0.646673
+12   'x[3,2]'    0
+13   'x[3,3]'    0
+14   'x[3,4]'    0
+15   'x[3,5]'    0.353327
+16   'p[1]'     50.6903
+17   'p[2]'     53.1145
+18   'p[3]'     48.4212
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'    2.84217e-12   none
+2    'I11[2]'    2.5679        none
+3    'I11[3]'    1.40687e-12   none
+4    'I11[4]'   -6.51283e-11   none
+5    'I11[5]'    7.35011       none
+6    'I12[1]'   -3.33955e-13   none
+7    'I12[2]'   19.0115        none
+8    'I12[3]'   16.2957        none
+9    'I12[4]'   -8.66862e-13   none
+10   'I12[5]'   -1.74794e-12   none
+11   'I13[1]'   -5.52092e-12   none
+12   'I13[2]'    8.45615       none
+13   'I13[3]'    3.41363       none
+14   'I13[4]'    2.23213       none
+15   'I13[5]'    4.63984e-12   none
+16   'I3[1]'    -1.11022e-16   none
+17   'I3[2]'     0             none
+18   'I3[3]'     0             none
+19   I5          5.78382e-12   none
+;
+
+Multilinear CG_3_5_5 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Preprocessing found feasible solution with value  0.00000000000     
+ Problem solved during preprocessing
+ Upper bound is  0.00000000000     
+
+ Calculating duals
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.03
+ Total CPU time used:                 0.03
+
+ Total no. of BaR iterations:      -1
+ Best solution found at node:      -1
+ Max. no. of nodes in memory:       0
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 0 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 0
+optimum found at node -1
+Baron run time (excluding setup) = 0.02 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var        :=
+1    'x[1,1]'    0.417988
+2    'x[1,2]'    0.00410264
+3    'x[1,3]'    0.250897
+4    'x[1,4]'    0.327012
+5    'x[1,5]'    0
+6    'x[2,1]'    0.0837217
+7    'x[2,2]'    0.274675
+8    'x[2,3]'    0.343106
+9    'x[2,4]'    0.279341
+10   'x[2,5]'    0.019156
+11   'x[3,1]'    0
+12   'x[3,2]'    0.318247
+13   'x[3,3]'    0
+14   'x[3,4]'    0.681753
+15   'x[3,5]'    0
+16   'p[1]'     59.3896
+17   'p[2]'     56.1258
+18   'p[3]'     62.9172
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'   -3.797e-10     none
+2    'I11[2]'   -2.38347e-07   none
+3    'I11[3]'   -6.88942e-11   none
+4    'I11[4]'   -5.41384e-10   none
+5    'I11[5]'    4.06029       none
+6    'I12[1]'   -1.64846e-12   none
+7    'I12[2]'    1.35003e-12   none
+8    'I12[3]'   -1.06581e-12   none
+9    'I12[4]'    2.11742e-12   none
+10   'I12[5]'   -9.34364e-12   none
+11   'I13[1]'    6.12857       none
+12   'I13[2]'   -2.30344e-10   none
+13   'I13[3]'    4.21711       none
+14   'I13[4]'    5.9331e-10    none
+15   'I13[5]'    4.8123        none
+16   'I3[1]'    -1.11022e-16   none
+17   'I3[2]'    -2.22045e-16   none
+18   'I3[3]'     0             none
+19   I5          9.99478e-10   none
+;
+
+Multilinear CG_3_5_6 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value  0.00000000000     
+ Problem solved during preprocessing
+ Upper bound is  0.00000000000     
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.02
+ Total CPU time used:                 0.02
+
+ Total no. of BaR iterations:      -1
+ Best solution found at node:      -1
+ Max. no. of nodes in memory:       0
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 0 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 0
+optimum found at node -1
+Baron run time (excluding setup) = 0.02 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var       :=
+1    'x[1,1]'    0
+2    'x[1,2]'    0
+3    'x[1,3]'    0
+4    'x[1,4]'    0.239441
+5    'x[1,5]'    0.760559
+6    'x[2,1]'    0
+7    'x[2,2]'    0.434108
+8    'x[2,3]'    0
+9    'x[2,4]'    0.447648
+10   'x[2,5]'    0.118244
+11   'x[3,1]'    0
+12   'x[3,2]'    0.714996
+13   'x[3,3]'    0.274282
+14   'x[3,4]'    0
+15   'x[3,5]'    0.0107219
+16   'p[1]'     57.4452
+17   'p[2]'     49.4247
+18   'p[3]'     50.855
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'    8.95852       none
+2    'I11[2]'    8.49358       none
+3    'I11[3]'    3.7015        none
+4    'I11[4]'    3.68217e-10   none
+5    'I11[5]'    4.07908e-10   none
+6    'I12[1]'   25.513         none
+7    'I12[2]'    1.72406e-10   none
+8    'I12[3]'    6.52205       none
+9    'I12[4]'    2.14513e-10   none
+10   'I12[5]'    2.12324e-10   none
+11   'I13[1]'    0.532789      none
+12   'I13[2]'    7.10543e-15   none
+13   'I13[3]'    0             none
+14   'I13[4]'    0.00583458    none
+15   'I13[5]'    0             none
+16   'I3[1]'     0             none
+17   'I3[2]'     0             none
+18   'I3[3]'    -5.81746e-12   none
+19   I5         -8.90239e-10   none
+;
+
+Multilinear CG_3_5_7 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value  0.00000000000     
+ Problem solved during preprocessing
+ Upper bound is  0.00000000000     
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.02
+ Total CPU time used:                 0.02
+
+ Total no. of BaR iterations:      -1
+ Best solution found at node:      -1
+ Max. no. of nodes in memory:       0
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 0 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 0
+optimum found at node -1
+Baron run time (excluding setup) = 0.02 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var       :=
+1    'x[1,1]'    0
+2    'x[1,2]'    0
+3    'x[1,3]'    0.312503
+4    'x[1,4]'    0.261696
+5    'x[1,5]'    0.425801
+6    'x[2,1]'    0
+7    'x[2,2]'    0.292173
+8    'x[2,3]'    0.548381
+9    'x[2,4]'    0
+10   'x[2,5]'    0.159446
+11   'x[3,1]'    0.0852595
+12   'x[3,2]'    0
+13   'x[3,3]'    0.200237
+14   'x[3,4]'    0
+15   'x[3,5]'    0.714504
+16   'p[1]'     48.4645
+17   'p[2]'     45.748
+18   'p[3]'     48.109
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'    3.01248       none
+2    'I11[2]'    9.81655       none
+3    'I11[3]'    7.10543e-15   none
+4    'I11[4]'    0             none
+5    'I11[5]'    7.10543e-15   none
+6    'I12[1]'    7.63447       none
+7    'I12[2]'    0             none
+8    'I12[3]'   -7.10543e-15   none
+9    'I12[4]'   11.2497        none
+10   'I12[5]'    0             none
+11   'I13[1]'   -7.10543e-15   none
+12   'I13[2]'    0.845395      none
+13   'I13[3]'   -1.42109e-14   none
+14   'I13[4]'    8.54601       none
+15   'I13[5]'   -1.42109e-14   none
+16   'I3[1]'     0             none
+17   'I3[2]'    -4.44089e-16   none
+18   'I3[3]'    -1.11022e-16   none
+19   I5          4.26326e-14   none
+;
+
+Multilinear CG_3_5_8 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value  0.00000000000     
+ Problem solved during preprocessing
+ Upper bound is  0.00000000000     
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.02
+ Total CPU time used:                 0.02
+
+ Total no. of BaR iterations:      -1
+ Best solution found at node:      -1
+ Max. no. of nodes in memory:       0
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 0 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 0
+optimum found at node -1
+Baron run time (excluding setup) = 0.02 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var       :=
+1    'x[1,1]'    0
+2    'x[1,2]'    0.410508
+3    'x[1,3]'    0
+4    'x[1,4]'    0.367594
+5    'x[1,5]'    0.221898
+6    'x[2,1]'    0
+7    'x[2,2]'    0
+8    'x[2,3]'    0.927422
+9    'x[2,4]'    0.0725778
+10   'x[2,5]'    0
+11   'x[3,1]'    0.472793
+12   'x[3,2]'    0
+13   'x[3,3]'    0
+14   'x[3,4]'    0.0651237
+15   'x[3,5]'    0.462083
+16   'p[1]'     56.2887
+17   'p[2]'     45.8746
+18   'p[3]'     55.4406
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'    9.23422       none
+2    'I11[2]'   -2.40519e-11   none
+3    'I11[3]'   21.5236        none
+4    'I11[4]'   -1.51054e-10   none
+5    'I11[5]'    5.32694e-11   none
+6    'I12[1]'   14.6749        none
+7    'I12[2]'    9.27219       none
+8    'I12[3]'    3.37508e-12   none
+9    'I12[4]'    1.3998e-09    none
+10   'I12[5]'    1.25843       none
+11   'I13[1]'   -9.62075e-12   none
+12   'I13[2]'   18.7442        none
+13   'I13[3]'   14.7           none
+14   'I13[4]'    3.20952e-11   none
+15   'I13[5]'    5.34328e-11   none
+16   'I3[1]'    -1.11022e-16   none
+17   'I3[2]'     0             none
+18   'I3[3]'     0             none
+19   I5         -7.3392e-11    none
+;
+
+Multilinear CG_3_5_9 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Preprocessing found feasible solution with value  0.00000000000     
+ Problem solved during preprocessing
+ Upper bound is  0.00000000000     
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.02
+ Total CPU time used:                 0.02
+
+ Total no. of BaR iterations:      -1
+ Best solution found at node:      -1
+ Max. no. of nodes in memory:       0
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 0 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 0
+optimum found at node -1
+Baron run time (excluding setup) = 0.02 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var       :=
+1    'x[1,1]'    0
+2    'x[1,2]'    0.394901
+3    'x[1,3]'    0
+4    'x[1,4]'    0
+5    'x[1,5]'    0.605099
+6    'x[2,1]'    0
+7    'x[2,2]'    0.578689
+8    'x[2,3]'    0.0100779
+9    'x[2,4]'    0.121458
+10   'x[2,5]'    0.289776
+11   'x[3,1]'    0.286343
+12   'x[3,2]'    0.697858
+13   'x[3,3]'    0
+14   'x[3,4]'    0.0157986
+15   'x[3,5]'    0
+16   'p[1]'     48.6736
+17   'p[2]'     56.0274
+18   'p[3]'     42.0186
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'    2.07182       none
+2    'I11[2]'    5.12195e-10   none
+3    'I11[3]'   10.9318        none
+4    'I11[4]'    4.36865       none
+5    'I11[5]'   -7.95758e-10   none
+6    'I12[1]'   12.7058        none
+7    'I12[2]'    3.62377e-12   none
+8    'I12[3]'   -2.06768e-12   none
+9    'I12[4]'   -2.84217e-14   none
+10   'I12[5]'    2.11031e-12   none
+11   'I13[1]'   -3.66995e-11   none
+12   'I13[2]'   -7.48059e-11   none
+13   'I13[3]'    3.26313       none
+14   'I13[4]'   -1.06546e-10   none
+15   'I13[5]'    2.24241       none
+16   'I3[1]'    -2.22045e-16   none
+17   'I3[2]'     0             none
+18   'I3[3]'     0             none
+19   I5          3.40975e-10   none
+;
+
+Multilinear CG_3_5_10 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+          1             1             0.09   -0.100000E+52       0.00000    
+*         2             0             0.11      0.00000          0.00000    
+          2             0             0.11      0.00000          0.00000    
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.12
+ Total CPU time used:                 0.11
+
+ Total no. of BaR iterations:       2
+ Best solution found at node:       2
+ Max. no. of nodes in memory:       2
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 2 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 2
+optimum found at node 2
+Baron run time (excluding setup) = 0.11 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname      _var       :=
+1    'x[1,1]'    0.0246516
+2    'x[1,2]'    0.226591
+3    'x[1,3]'    0
+4    'x[1,4]'    0.374732
+5    'x[1,5]'    0.374026
+6    'x[2,1]'    0
+7    'x[2,2]'    0
+8    'x[2,3]'    0.562954
+9    'x[2,4]'    0.152816
+10   'x[2,5]'    0.28423
+11   'x[3,1]'    0.0750359
+12   'x[3,2]'    0.0629641
+13   'x[3,3]'    0.633286
+14   'x[3,4]'    0
+15   'x[3,5]'    0.228714
+16   'p[1]'     54.0894
+17   'p[2]'     53.3236
+18   'p[3]'     47.6831
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'    2.08189e-12   none
+2    'I11[2]'   -8.3844e-13    none
+3    'I11[3]'    5.27316       none
+4    'I11[4]'    2.19558e-12   none
+5    'I11[5]'    8.6402e-12    none
+6    'I12[1]'    3.15425       none
+7    'I12[2]'   13.3421        none
+8    'I12[3]'    2.21192e-11   none
+9    'I12[4]'    2.60769e-12   none
+10   'I12[5]'   -1.42535e-11   none
+11   'I13[1]'   -1.33582e-12   none
+12   'I13[2]'    1.79412e-11   none
+13   'I13[3]'    4.53326e-12   none
+14   'I13[4]'    4.47617       none
+15   'I13[5]'    9.39337e-12   none
+16   'I3[1]'    -2.59237e-13   none
+17   'I3[2]'    -1.11022e-16   none
+18   'I3[3]'     0             none
+19   I5         -3.27631e-11   none
+;
+
+Multilinear CG_3_5_1 
+BARON 21.1.13 (2021.01.13): objbound 
+barstats 
+maxtime=300
+nlpsol=6
+outlev=1
+===========================================================================
+ BARON version 21.1.13. Built: OSX-64 Wed Jan 13 16:12:48 EST 2021
+
+ BARON is a product of The Optimization Firm.
+ For information on BARON, see https://minlp.com/about-baron
+
+ If you use this software, please cite publications from
+ https://minlp.com/baron-publications, such as: 
+
+ Khajavirad, A. and N. V. Sahinidis,
+ A hybrid LP/NLP paradigm for global optimization relaxations,
+ Mathematical Programming Computation, 10, 383-421, 2018.
+===========================================================================
+ This BARON run may utilize the following subsolver(s)
+ For LP/MIP/QP: CLP/CBC                                         
+ For NLP: FILTERSD, FILTERSQP
+===========================================================================
+ Doing local search
+ Solving bounding LP
+ Starting multi-start local search
+ Done with local search
+===========================================================================
+  Iteration    Open nodes         Time (s)    Lower bound      Upper bound
+*         1             0             0.07      0.00000          0.00000    
+          1             0             0.08      0.00000          0.00000    
+
+                         *** Normal completion ***            
+
+ Wall clock time:                     0.08
+ Total CPU time used:                 0.08
+
+ Total no. of BaR iterations:       1
+ Best solution found at node:       1
+ Max. no. of nodes in memory:       1
+ 
+ All done
+===========================================================================
+BARON 21.1.13 (2021.01.13): 1 iterations, optimal within tolerances.
+Objective 0
+Objective lower bound = 0, upper bound = 0
+barstatus = 1, modelstatus = 1
+max nodes in memory = 1
+optimum found at node 1
+Baron run time (excluding setup) = 0.07 seconds
+
+suffix obj_ub OUT;
+suffix obj_lb OUT;
+solve_result = solved
+
+:    _varname     _var       :=
+1    'x[1,1]'    0.286298
+2    'x[1,2]'    0
+3    'x[1,3]'    0.376158
+4    'x[1,4]'    0.337544
+5    'x[1,5]'    0
+6    'x[2,1]'    0.304044
+7    'x[2,2]'    0
+8    'x[2,3]'    0.55311
+9    'x[2,4]'    0
+10   'x[2,5]'    0.142846
+11   'x[3,1]'    0.551025
+12   'x[3,2]'    0
+13   'x[3,3]'    0
+14   'x[3,4]'    0.243799
+15   'x[3,5]'    0.205176
+16   'p[1]'     54.1058
+17   'p[2]'     50.7466
+18   'p[3]'     57.5733
+;
+
+:    _conname    _con.slack  _con.sstatus    :=
+1    'I11[1]'    0             none
+2    'I11[2]'    6.42906       none
+3    'I11[3]'    0             none
+4    'I11[4]'    0             none
+5    'I11[5]'    2.42105       none
+6    'I12[1]'    7.10543e-15   none
+7    'I12[2]'    5.09288       none
+8    'I12[3]'    7.10543e-15   none
+9    'I12[4]'    1.51241       none
+10   'I12[5]'   -7.10543e-15   none
+11   'I13[1]'    0             none
+12   'I13[2]'   11.237         none
+13   'I13[3]'   12.9576        none
+14   'I13[4]'   -1.42109e-14   none
+15   'I13[5]'    0             none
+16   'I3[1]'    -4.44089e-16   none
+17   'I3[2]'    -2.22933e-13   none
+18   'I3[3]'    -2.22045e-16   none
+19   I5         -1.12834e-11   none
+;
+
+ampl: reset;
+ampl: include '/Users/miriamfischer/Desktop/Dissertation_MF-copy/model/overview_multiplayer_intoutcome.run';
